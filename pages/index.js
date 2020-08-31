@@ -60,7 +60,7 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, Segoe UI,
+          font-family: TTNorms, -apple-system, BlinkMacSystemFont, Segoe UI,
             Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
             Helvetica Neue, sans-serif;
         }
