@@ -7,36 +7,6 @@ export default function Home() {
       <Head>
         <title>Doordash</title>
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="preload"
-          href="https://typography.doordash.com/TTNorms-Regular.woff2"
-          type="font/woff2"
-          as="font"
-        />
-        <link
-          rel="preload"
-          href="https://typography.doordash.com/TTNorms-Medium.woff2"
-          type="font/woff2"
-          as="font"
-        />
-        <link
-          rel="preload"
-          href="https://typography.doordash.com/TTNorms-Bold.woff2"
-          type="font/woff2"
-          as="font"
-        />
-        <link
-          rel="preload"
-          href="https://typography.doordash.com/TTNorms-ExtraBold.woff2"
-          type="font/woff2"
-          as="font"
-        />
-        <link
-          rel="preload"
-          href="https://typography.doordash.com/SourceSerifPro-Regular.woff2"
-          type="font/woff2"
-          as="font"
-        />
       </Head>
 
       <main>
@@ -63,6 +33,24 @@ export default function Home() {
           font-family: TTNorms, -apple-system, BlinkMacSystemFont, Segoe UI,
             Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
             Helvetica Neue, sans-serif;
+        }
+
+        @font-face {
+          font-family: "TTNorms";
+          src: url("https://typography.doordash.com/TTNorms-Regular.woff2")
+            format("woff");
+        }
+
+        @font-face {
+          font-family: "TTNorms-Medium";
+          src: url("https://typography.doordash.com/TTNorms-Medium.woff2")
+            format("woff");
+        }
+
+        @font-face {
+          font-family: "TTNorms-Bold";
+          src: url("https://typography.doordash.com/TTNorms-Bold.woff2")
+            format("woff");
         }
 
         * {

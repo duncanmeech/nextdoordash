@@ -1,7 +1,7 @@
 const HERO_IMAGE =
   "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=800,format=auto,quality=50/https://cdn.doordash.com/media/consumer/home/landing/hero/food/mobile_food.png";
 
-import Logo from "../components/logo";
+import { Logo, Mag, RightArrow } from "./icons";
 
 export default function HomePageHero() {
   return (
@@ -17,7 +17,9 @@ export default function HomePageHero() {
         <span>restaurants, delivered</span>
         <br />
         <div className="address">
+          <Mag />
           <input placeholder="Enter Delivery Address" />
+          <RightArrow />
         </div>
       </div>
       <style jsx>{`
@@ -73,6 +75,9 @@ export default function HomePageHero() {
           align-items: center;
         }
         .address {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           width: 60vw;
           font-size: 18px;
           line-height: 24px;
