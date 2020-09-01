@@ -3,26 +3,74 @@ const HERO_IMAGE =
 
 import { Logo, Mag, RightArrow } from "./icons";
 
-export default function HomePageHero() {
+export default function ({ stores }) {
   return (
-    <div className="home-page-hero">
-      <div className="sign-in-out-container">
-        <button className="sign-in-out sign-in">Sign In</button>
-        <button className="sign-in-out sign-out">Sign Out</button>
-      </div>
-      <div className="splash">
-        <Logo />
-        <br />
-        <span>Your favorite</span>
-        <span>restaurants, delivered</span>
-        <br />
-        <div className="address">
-          <Mag />
-          <input placeholder="Enter Delivery Address" />
-          <RightArrow />
+    <main>
+      <div className="home-page-hero">
+        <div className="sign-in-out-container">
+          <button className="round-button sign-in">Sign In</button>
+          <button className="round-button sign-out">Sign Out</button>
+        </div>
+        <div className="splash">
+          <Logo />
+          <br />
+          <span>Your favorite</span>
+          <span>restaurants, delivered</span>
+          <br />
+          <div className="address">
+            <Mag />
+            <input placeholder="Enter Delivery Address" />
+            <RightArrow />
+          </div>
         </div>
       </div>
+      <div className="app-upsell">
+        <span className="app-upsell-text">
+          Get the best DoorDash experience
+        </span>
+        <button className="round-button app-upsell-button">Get the app</button>
+      </div>
+      <p className="local-favorites">Local Favorites</p>
+      <div className="grid">
+        {stores.map((store) => (
+          <div className="store">
+            <img className="store-image" src={store.imageUrl} />
+            <span className="store-title">{store.title}</span>
+            <span className="store-subtitle">{store.subTitle}</span>
+          </div>
+        ))}
+      </div>
       <style jsx>{`
+        .grid {
+          display: grid;
+          margin: 0 20px;
+          grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+          grid-column-gap: 20px;
+          grid-row-gap: 20px;
+        }
+        .store {
+          display: flex;
+          flex-direction: column;
+        }
+        .store-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+          margin-bottom: 4px;
+        }
+        .store-title {
+          font-size: 14px;
+          font-family: TTNorms-Bold;
+          color: rgb(73, 73, 73);
+          margin-bottom: 4px;
+        }
+        .store-subtitle {
+          font-size: 14px;
+          font-family: TTNorms;
+          color: lightgray;
+          margin-bottom: 4px;
+        }
         .home-page-hero {
           background-image: url(${HERO_IMAGE});
           background-size: cover;
@@ -39,17 +87,17 @@ export default function HomePageHero() {
           margin-top: 20px;
           margin-right: 20px;
         }
-        .sign-in-out {
-          font-size: 18px;
-          font-weight: bold;
+        .round-button {
+          font-size: 14px;
+          font-family: TTNorms-Bold;
           line-height: 24px;
           border-radius: 1000px;
-          padding: 8px 12px;
+          padding: 4px 12px;
           outline: none;
           box-sizing: content-box;
           border: 4px solid transparent;
         }
-        .sign-in-out:focus {
+        .round-button:focus {
           border: 4px solid rgba(0, 0, 255, 0.4);
         }
         .sign-in {
@@ -94,7 +142,36 @@ export default function HomePageHero() {
           outline: none;
           font-size: 14px;
         }
+
+        .address svg {
+          flex-shrink: 0;
+        }
+
+        .app-upsell {
+          display: flex;
+          margin: 20px 20px;
+          padding-bottom: 20px;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid lightgray;
+        }
+        .app-upsell-text {
+          font-size: 14px;
+          font-family: TTNorms-Bold;
+          width: 50%;
+          color: rgb(73, 73, 73);
+        }
+        .app-upsell-button {
+          color: white;
+          background-color: rgb(235, 23, 0);
+        }
+        .local-favorites {
+          margin: 0 20px;
+          font-size: 18px;
+          font-family: TTNorms-Bold;
+          color: rgb(73, 73, 73);
+        }
       `}</style>
-    </div>
+    </main>
   );
 }
