@@ -55,8 +55,9 @@ export default function ({ stores }) {
         .store-image {
           width: 100%;
           height: 100%;
+          height: 165px;
           object-fit: cover;
-          border-radius: 5px;
+          border-radius: 9px;
           margin-bottom: 4px;
         }
         .store-title {
@@ -68,7 +69,7 @@ export default function ({ stores }) {
         .store-subtitle {
           font-size: 14px;
           font-family: TTNorms;
-          color: lightgray;
+          color: rgb(118, 118, 118);
           margin-bottom: 4px;
         }
         .home-page-hero {
