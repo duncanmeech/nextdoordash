@@ -1,7 +1,9 @@
+import { Logo } from "./icons";
+import StoreGrid from "./store-grid";
+import AddressPicker from "./address-picker";
+
 const HERO_IMAGE =
   "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=800,format=auto,quality=50/https://cdn.doordash.com/media/consumer/home/landing/hero/food/mobile_food.png";
-
-import { Logo, Mag, RightArrow } from "./icons";
 
 export default function ({ stores }) {
   return (
@@ -17,11 +19,7 @@ export default function ({ stores }) {
           <span>Your favorite</span>
           <span>restaurants, delivered</span>
           <br />
-          <div className="address">
-            <Mag />
-            <input placeholder="Enter Delivery Address" />
-            <RightArrow />
-          </div>
+          <AddressPicker />
         </div>
       </div>
       <div className="app-upsell">
@@ -31,47 +29,8 @@ export default function ({ stores }) {
         <button className="round-button app-upsell-button">Get the app</button>
       </div>
       <p className="local-favorites">Local Favorites</p>
-      <div className="grid">
-        {stores.map((store) => (
-          <div className="store">
-            <img className="store-image" src={store.imageUrl} />
-            <span className="store-title">{store.title}</span>
-            <span className="store-subtitle">{store.subTitle}</span>
-          </div>
-        ))}
-      </div>
+      <StoreGrid stores={stores} />
       <style jsx>{`
-        .grid {
-          display: grid;
-          margin: 0 20px;
-          grid-template-columns: calc(50% - 10px) calc(50% - 10px);
-          grid-column-gap: 20px;
-          grid-row-gap: 20px;
-        }
-        .store {
-          display: flex;
-          flex-direction: column;
-        }
-        .store-image {
-          width: 100%;
-          height: 100%;
-          height: 165px;
-          object-fit: cover;
-          border-radius: 9px;
-          margin-bottom: 4px;
-        }
-        .store-title {
-          font-size: 14px;
-          font-family: TTNorms-Bold;
-          color: rgb(73, 73, 73);
-          margin-bottom: 4px;
-        }
-        .store-subtitle {
-          font-size: 14px;
-          font-family: TTNorms;
-          color: rgb(118, 118, 118);
-          margin-bottom: 4px;
-        }
         .home-page-hero {
           background-image: url(${HERO_IMAGE});
           background-size: cover;
