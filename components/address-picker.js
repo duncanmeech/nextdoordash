@@ -1,10 +1,10 @@
 import { Mag, RightArrow } from "./icons";
 
-export default function () {
+export default function ({ activated }) {
   return (
     <div className="address">
       <Mag />
-      <input placeholder="Enter Delivery Address" />
+      <input placeholder="Enter Delivery Address" onFocus={activated} />
       <RightArrow />
       <style jsx>{`
         .address {

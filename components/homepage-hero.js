@@ -5,7 +5,7 @@ import AddressPicker from "./address-picker";
 const HERO_IMAGE =
   "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=800,format=auto,quality=50/https://cdn.doordash.com/media/consumer/home/landing/hero/food/mobile_food.png";
 
-export default function ({ stores }) {
+export default function ({ stores, activated }) {
   return (
     <main>
       <div className="home-page-hero">
@@ -19,7 +19,7 @@ export default function ({ stores }) {
           <span>Your favorite</span>
           <span>restaurants, delivered</span>
           <br />
-          <AddressPicker />
+          <AddressPicker activated={activated} />
         </div>
       </div>
       <div className="app-upsell">

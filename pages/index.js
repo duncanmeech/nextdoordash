@@ -2,8 +2,10 @@ import Head from "next/head";
 import HomePageHero from "../components/homepage-hero";
 import StoreFeed from "../components/store-feed";
 import TopCities from "../components/top-cities";
+import { useRouter } from "next/router";
 
 function Home({ stores }) {
+  const router = useRouter();
   return (
     <div className="container">
       <Head>
@@ -12,7 +14,10 @@ function Home({ stores }) {
       </Head>
 
       <main>
-        <HomePageHero stores={stores} />
+        <HomePageHero
+          stores={stores}
+          activated={() => router.push("/address")}
+        />
       </main>
 
       <br />
