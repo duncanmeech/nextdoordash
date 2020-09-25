@@ -17,7 +17,7 @@ class StorePage extends React.Component {
   }
 
   render() {
-    const { storeName, storeImage } = this.props;
+    const { storeName, storeImage, timing } = this.props;
     const { storepageFeed } = this.state;
     let menus;
     if (storepageFeed) {
@@ -33,7 +33,10 @@ class StorePage extends React.Component {
 
         <div className="page">
           <div className="container">
-            <Hero storeName={storeName} storeImage={storeImage} />
+            <Hero
+              storeName={storeName + " " + timing}
+              storeImage={storeImage}
+            />
             {menus &&
               menus.map((menu, index) => <Menu key={index} menu={menu} />)}
           </div>
@@ -69,16 +72,23 @@ class StorePage extends React.Component {
   }
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export async function getServerSideProps(context) {
-  // const response = await fetch("http://localhost:3000/storepage.json");
+  const start = Date.now();
+  //const response = await fetch("http://localhost:3000/storepage.json");
   const response = await fetch(
     "https://nextdoordash.vercel.app/storepage.json"
   );
   const feed = await response.json();
+  await sleep(1000);
   return {
     props: {
       storeName: feed.data.storepageFeed.storeHeader.name,
       storeImage: feed.data.storepageFeed.storeHeader.businessHeaderImgUrl,
+      timing: Date.now() - start,
     },
   };
 }
