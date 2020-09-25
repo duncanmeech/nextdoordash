@@ -43,6 +43,11 @@ export default function ({ menu }) {
           grid-column-gap: 16px;
           grid-row-gap: 16px;
         }
+        @media (max-width: 800px) {
+          .grid {
+            grid-template-columns: 1fr;
+          }
+        }
         .box {
           width: 100%;
           height: 120px;
