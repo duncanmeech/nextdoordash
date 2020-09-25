@@ -2,9 +2,14 @@ import fetch from "node-fetch";
 import Head from "next/head";
 import Hero from "../../components/hero";
 import Menu from "../../components/menu";
+import ItemModal from "../../components/item-modal";
 
 class StorePage extends React.Component {
-  state = {};
+  state = {
+    itemModalOpen: false,
+    storePageFeed: null,
+    selectedItem: null,
+  };
 
   componentDidMount() {
     fetch("/storepage.json").then((response) => {
@@ -16,9 +21,18 @@ class StorePage extends React.Component {
     });
   }
 
+  // visibility management for the item modal
+  onOpenItemModal = (item) => {
+    this.setState({ itemModalOpen: true, selectedItem: item });
+  };
+
+  onCloseItemModal = () => {
+    this.setState({ itemModalOpen: false, selectedItem: null });
+  };
+
   render() {
     const { storeName, storeImage, timing } = this.props;
-    const { storepageFeed } = this.state;
+    const { storepageFeed, itemModalOpen, selectedItem } = this.state;
     let menus;
     if (storepageFeed) {
       menus = storepageFeed.itemLists;
@@ -31,6 +45,10 @@ class StorePage extends React.Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
+        {itemModalOpen && (
+          <ItemModal menuItem={selectedItem} closed={this.onCloseItemModal} />
+        )}
+
         <div className="page">
           <div className="container">
             <Hero
@@ -38,7 +56,13 @@ class StorePage extends React.Component {
               storeImage={storeImage}
             />
             {menus &&
-              menus.map((menu, index) => <Menu key={index} menu={menu} />)}
+              menus.map((menu, index) => (
+                <Menu
+                  key={index}
+                  menu={menu}
+                  onOpenItemModal={this.onOpenItemModal}
+                />
+              ))}
           </div>
         </div>
 
@@ -48,23 +72,42 @@ class StorePage extends React.Component {
             font-weight: bold;
             text-align: left;
             width: 100%;
-            font-family: sans-serif;
           }
           .page {
             display: flex;
             justify-content: center;
             flex-direction: row;
+            font-family: TTNorms, -apple-system, BlinkMacSystemFont, Segoe UI,
+              Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+              Helvetica Neue, sans-serif;
           }
           .container {
             width: calc(100% - 40px);
             max-width: 1000px;
-            font-family: sans-serif;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             padding: 20px;
+          }
+
+          @font-face {
+            font-family: "TTNorms";
+            src: url("https://typography.doordash.com/TTNorms-Regular.woff2")
+              format("woff");
+          }
+
+          @font-face {
+            font-family: "TTNorms-Medium";
+            src: url("https://typography.doordash.com/TTNorms-Medium.woff2")
+              format("woff");
+          }
+
+          @font-face {
+            font-family: "TTNorms-Bold";
+            src: url("https://typography.doordash.com/TTNorms-Bold.woff2")
+              format("woff");
           }
         `}</style>
       </React.Fragment>
@@ -83,7 +126,7 @@ export async function getServerSideProps(context) {
     "https://nextdoordash.vercel.app/storepage.json"
   );
   const feed = await response.json();
-  await sleep(1000);
+  // await sleep(1000);
   return {
     props: {
       storeName: feed.data.storepageFeed.storeHeader.name,

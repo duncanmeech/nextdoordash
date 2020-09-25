@@ -22,7 +22,7 @@ const data = [
   "Austin",
 ];
 
-export default class TopCities extends React.Component {
+export default class TopCities extends React.PureComponent {
   state = {
     cities: [],
   };

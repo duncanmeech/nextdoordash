@@ -24,8 +24,7 @@ export default function ({ storeName, storeImage }) {
 
         .name {
           font-size: 30px;
-          font-family: sans-serif;
-          font-weight: bold;
+          font-family: TTNorms-Bold;
         }
       `}</style>
     </div>
