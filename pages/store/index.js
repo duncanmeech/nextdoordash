@@ -72,7 +72,9 @@ class StorePage extends React.Component {
 export async function getServerSideProps(context) {
   console.log(context);
   //const response = await fetch("http://localhost:3000/storepage.json");
-  const response = await fetch("/storepage.json");
+  const response = await fetch(
+    "https://nextdoordash.vercel.app/storepage.json"
+  );
   const feed = await response.json();
   return {
     props: {
