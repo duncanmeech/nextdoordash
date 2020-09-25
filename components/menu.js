@@ -1,4 +1,5 @@
 import { getCannonicalURI } from "./utils/image";
+import { useInView } from "react-intersection-observer";
 
 const optimalImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
@@ -7,21 +8,31 @@ const optimalImageUrl = (imageUrl) => {
 
 export default function ({ menu }) {
   const { name, id, items } = menu;
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
   return (
-    <div key={id} className="menu">
+    <div key={id} className="menu" ref={ref}>
       <div className="menu-name">{name}</div>
       <div className="grid">
         {items.map((item) => {
           const { name, displayPrice, id, imageUrl } = item;
           return (
             <div key={id} className="box">
-              <div className="box-left">
-                <span className="item-name">{name}</span>
-                <span className="price">{displayPrice}</span>
-              </div>
-              <div className="image">
-                <img className="img" src={optimalImageUrl(imageUrl)} />
-              </div>
+              {inView && (
+                <React.Fragment>
+                  <div className="box-left">
+                    <span className="item-name">{name}</span>
+                    <span className="price">{displayPrice}</span>
+                  </div>
+                  <div className="image">
+                    <img className="img" src={optimalImageUrl(imageUrl)} />
+                  </div>
+                </React.Fragment>
+              )}
             </div>
           );
         })}
@@ -29,7 +40,7 @@ export default function ({ menu }) {
       <style jsx>{`
         .menu {
           width: 100%;
-          margin-top: 20px;
+          margin-top: 40px;
         }
         .menu-name {
           font-size: 24px;
@@ -81,7 +92,6 @@ export default function ({ menu }) {
           width: 120px;
           height: 120px;
           flex-shrink: 0;
-          background-color: lightgray;
         }
         .img {
           object-fit: cover;
