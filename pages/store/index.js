@@ -34,7 +34,8 @@ class StorePage extends React.Component {
         <div className="page">
           <div className="container">
             <Hero storeName={storeName} storeImage={storeImage} />
-            {menus && menus.map((menu) => <Menu menu={menu} />)}
+            {menus &&
+              menus.map((menu, index) => <Menu key={index} menu={menu} />)}
           </div>
         </div>
 

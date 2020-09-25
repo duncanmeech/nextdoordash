@@ -7,15 +7,14 @@ const optimalImageUrl = (imageUrl) => {
 
 export default function ({ menu }) {
   const { name, id, items } = menu;
-  console.dir(menu);
   return (
     <div key={id} className="menu">
       <div className="menu-name">{name}</div>
       <div className="grid">
         {items.map((item) => {
-          const { name, description, displayPrice, id, imageUrl } = item;
+          const { name, displayPrice, id, imageUrl } = item;
           return (
-            <div className="box">
+            <div key={id} className="box">
               <div className="box-left">
                 <span className="item-name">{name}</span>
                 <span className="price">{displayPrice}</span>
