@@ -1,0 +1,1469 @@
+{
+  "data": {
+    "storepageFeed": {
+      "storeHeader": {
+        "id": "658900",
+        "name": "McDonald's",
+        "description": "Fast Food, Burgers, Ice Cream, Breakfast, American (New), Dinner",
+        "priceRange": 1,
+        "offersDelivery": true,
+        "offersPickup": false,
+        "offersGroupOrder": true,
+        "isConvenience": false,
+        "isDashpassPartner": true,
+        "address": {
+          "city": "San Francisco",
+          "street": "609 Market Street",
+          "displayAddress": "609 Market St, San Francisco, CA 94105, USA",
+          "cityLink": "/food-delivery/san-francisco-ca-restaurants/",
+          "__typename": "StoreHeaderAddress"
+        },
+        "business": {
+          "id": "5579",
+          "name": "McDonald's",
+          "link": "/business/mcdonald-s-5579/",
+          "__typename": "Business"
+        },
+        "businessTags": [
+          {
+            "name": "Fast Food",
+            "link": "/fast-food-near-me/",
+            "__typename": "BusinessTag"
+          },
+          {
+            "name": "Burgers",
+            "link": "/burgers-near-me/",
+            "__typename": "BusinessTag"
+          },
+          {
+            "name": "Ice Cream",
+            "link": "/ice-cream-near-me/",
+            "__typename": "BusinessTag"
+          },
+          {
+            "name": "Breakfast",
+            "link": "/breakfast-near-me/",
+            "__typename": "BusinessTag"
+          },
+          {
+            "name": "American (New)",
+            "link": "/american--new--near-me/",
+            "__typename": "BusinessTag"
+          },
+          {
+            "name": "Dinner",
+            "link": "/dinner-near-me/",
+            "__typename": "BusinessTag"
+          }
+        ],
+        "deliveryFeeLayout": {
+          "title": "$1.99",
+          "subtitle": "delivery fee",
+          "isSurging": false,
+          "displayDeliveryFee": "$1.99 delivery fee",
+          "__typename": "DeliveryFeeLayout"
+        },
+        "deliveryFeeTooltip": {
+          "title": "",
+          "description": "",
+          "__typename": "ModalContent"
+        },
+        "coverImgUrl": "https://cdn.doordash.com/media/restaurant%2Fcover%2FMcD_GoldenArches_1235_RGB_1.jpg",
+        "coverSquareImgUrl": "https://cdn.doordash.com/media/restaurant%2Fcover_square%2FMcDonalds_logo.png",
+        "businessHeaderImgUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1000,format=auto,quality=72/https://cdn.doordash.com/media/store%2Fheader%2F5579.jpg",
+        "ratings": {
+          "numRatings": 2000,
+          "numRatingsDisplayString": "2,400+ ratings",
+          "averageRating": 4.6,
+          "isNewlyAdded": false,
+          "__typename": "StoreRatings"
+        },
+        "distanceFromConsumer": {
+          "value": 0.5,
+          "label": "mi",
+          "__typename": "DistanceFromConsumer"
+        },
+        "status": {
+          "delivery": {
+            "isAvailable": true,
+            "minutes": "15 - 25",
+            "displayUnavailableStatus": "",
+            "unavailableReason": "",
+            "isTooFarFromConsumer": false,
+            "isStoreInactive": false,
+            "__typename": "OperatingStatus"
+          },
+          "pickup": {
+            "isAvailable": false,
+            "minutes": "10 - 20",
+            "displayUnavailableStatus": "",
+            "unavailableReason": "",
+            "isStoreInactive": false,
+            "__typename": "OperatingStatus"
+          },
+          "__typename": "DeliveryPickupStatus"
+        },
+        "__typename": "StoreHeader"
+      },
+      "banners": {
+        "pickup": null,
+        "catering": null,
+        "demandGen": null,
+        "demandTest": null,
+        "__typename": "StoreBanners"
+      },
+      "menuBook": {
+        "id": "956274",
+        "name": "Breakfast Menu",
+        "displayOpenHours": "6:00 AM - 10:29 AM",
+        "menuCategories": [
+          {
+            "id": "11169896",
+            "name": "Most Popular",
+            "numItems": 12,
+            "next": {
+              "anchor": "category-11169896",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "11169894",
+            "name": "Combo Meals",
+            "numItems": 9,
+            "next": {
+              "anchor": "category-11169894",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "11169892",
+            "name": "Homestyle Breakfasts",
+            "numItems": 6,
+            "next": {
+              "anchor": "category-11169892",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "11169893",
+            "name": "McCafé",
+            "numItems": 38,
+            "next": {
+              "anchor": "category-11169893",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "12490526",
+            "name": "McCafé Bakery",
+            "numItems": 6,
+            "next": {
+              "anchor": "category-12490526",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "18326015",
+            "name": "Condiments",
+            "numItems": 28,
+            "next": {
+              "anchor": "category-18326015",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "11169891",
+            "name": "Promotions",
+            "numItems": 2,
+            "next": {
+              "anchor": "category-11169891",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "11169895",
+            "name": "Snacks, Sides & More",
+            "numItems": 9,
+            "next": {
+              "anchor": "category-11169895",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "11169890",
+            "name": "Beverages",
+            "numItems": 16,
+            "next": {
+              "anchor": "category-11169890",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          },
+          {
+            "id": "14019746",
+            "name": "Individual Items",
+            "numItems": 13,
+            "next": {
+              "anchor": "category-14019746",
+              "cursor": "",
+              "__typename": "MenuBookCategoryNext"
+            },
+            "__typename": "MenuBookCategory"
+          }
+        ],
+        "menuList": [
+          {
+            "id": "956274",
+            "name": "Breakfast Menu",
+            "displayOpenHours": "6:00 AM - 10:29 AM",
+            "__typename": "MenuBookMenu"
+          },
+          {
+            "id": "956275",
+            "name": "Lunch Menu",
+            "displayOpenHours": "10:30 AM - 4:59 PM",
+            "__typename": "MenuBookMenu"
+          },
+          {
+            "id": "956282",
+            "name": "Dinner Menu",
+            "displayOpenHours": "5:00 PM - 1:30 AM",
+            "__typename": "MenuBookMenu"
+          }
+        ],
+        "__typename": "MenuBook"
+      },
+      "itemLists": [
+        {
+          "id": "category-11169896",
+          "name": "Most Popular",
+          "description": "",
+          "items": [
+            {
+              "id": "123312382",
+              "name": "Bacon Egg Cheese Biscuit Meal",
+              "description": "(600 - 770 Cal.)",
+              "displayPrice": "$9.87",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1a4caa5c-419a-4cfc-a0d9-2358976dfcad-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312384",
+              "name": "Sausage Egg McMuffin Meal",
+              "description": "(620 - 790 Cal.)",
+              "displayPrice": "$9.89",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/d4aca8e4-ec3b-4d61-bdc8-a4c2fe73979a-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312375",
+              "name": "Sausage Egg Cheese McGriddle Meal",
+              "description": "(700 - 870 Cal.)",
+              "displayPrice": "$10.59",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a47cb2a4-774a-47f5-aea4-8695dae7cbe4-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "199409555",
+              "name": "Big Breakfast with Hotcakes",
+              "description": "(1340 Cal.)",
+              "displayPrice": "$8.27",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/0f256209-b2dd-49d2-ab2e-f5ec41e011bd-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "199409554",
+              "name": "Iced Coffee",
+              "description": "(140 Cal.)",
+              "displayPrice": "$2.54",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/fd302c93-597a-4d6f-bb97-f76077e743ca-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "199409553",
+              "name": "French Vanilla Latte",
+              "description": "(240 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/01641437-d430-401c-967c-dc211261c8e9-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312374",
+              "name": "ADD Straw",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/84a53e1a-79c2-4d24-8881-1d23c65f110a-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312383",
+              "name": "ADD Napkin",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/aa918487-cc94-4e4b-b553-6caaa70d18eb-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312385",
+              "name": "ADD 2pc Cutlery",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1e36d6a3-084d-414f-a6be-9099b18a1dd3-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323140",
+              "name": "Spoons",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/82e735df-8ef2-461d-93e4-6210496e9aed-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312378",
+              "name": "Add Coffee Stirrer",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/24968108-b35b-4021-bd07-25f0ee99a497-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312377",
+              "name": "Hash Browns",
+              "description": "(150 Cal.)",
+              "displayPrice": "$2.69",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/c3ee2bae-19df-4b7e-926b-4283604a9ca7-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-11169894",
+          "name": "Combo Meals",
+          "description": "",
+          "items": [
+            {
+              "id": "95532413",
+              "name": "Bacon Egg Cheese Biscuit Meal",
+              "description": "(600 - 770 Cal.)",
+              "displayPrice": "$9.87",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1a4caa5c-419a-4cfc-a0d9-2358976dfcad-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532421",
+              "name": "Sausage Egg Biscuit Meal",
+              "description": "(680 - 850 Cal.)",
+              "displayPrice": "$9.89",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/6138544f-12b7-474b-b194-e205e9c133e6-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532423",
+              "name": "McChicken Biscuit Meal",
+              "description": "(570 - 740 Cal.)",
+              "displayPrice": "$6.15",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/3b0a8b8b-bd3d-4e53-97e7-c38970e0b954-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532359",
+              "name": "Egg McMuffin Meal",
+              "description": "(450 - 620 Cal.)",
+              "displayPrice": "$9.89",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/7b662a5c-4e16-4646-9b78-92261599408f-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532351",
+              "name": "Sausage Egg McMuffin Meal",
+              "description": "(620 - 790 Cal.)",
+              "displayPrice": "$9.89",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/d4aca8e4-ec3b-4d61-bdc8-a4c2fe73979a-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532428",
+              "name": "Bacon Egg Cheese McGriddle Meal",
+              "description": "(570 - 740 Cal.)",
+              "displayPrice": "$10.35",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/052bb980-065f-48dd-a9ae-9bd41f0eaa13-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532414",
+              "name": "Sausage Egg Cheese McGriddle Meal",
+              "description": "(700 - 870 Cal.)",
+              "displayPrice": "$10.59",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a47cb2a4-774a-47f5-aea4-8695dae7cbe4-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532385",
+              "name": "Chicken McGriddle Meal",
+              "description": "(540 - 710 Cal.)",
+              "displayPrice": "$6.15",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/aabdb6f5-3e4a-4b45-b017-84530803edc6-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532418",
+              "name": "2 Sausage Burrito Meal",
+              "description": "(750 - 920 Cal.)",
+              "displayPrice": "$9.11",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/9bde193c-8d28-461c-aef7-252b1f7eed57-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-11169892",
+          "name": "Homestyle Breakfasts",
+          "description": "",
+          "items": [
+            {
+              "id": "144848468",
+              "name": "Big Breakfast With Muffin",
+              "description": "(650 Cal.)",
+              "displayPrice": "$7.19",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/deac4138-982f-4417-b300-693bd3723db3-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532324",
+              "name": "Big Breakfast",
+              "description": "(750 Cal.)",
+              "displayPrice": "$7.19",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/cf76120f-3f9f-4b33-9866-78a0344a789f-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848462",
+              "name": "Big Breakfast with Muffin and Hotcake",
+              "description": "(1230 Cal.)",
+              "displayPrice": "$8.39",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/ccbaeee5-06b4-43fe-8c95-79f345752699-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532380",
+              "name": "Big Breakfast with Hotcakes",
+              "description": "(1340 Cal.)",
+              "displayPrice": "$8.27",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/0f256209-b2dd-49d2-ab2e-f5ec41e011bd-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532332",
+              "name": "Hotcakes and Sausage",
+              "description": "(780 Cal.)",
+              "displayPrice": "$6.79",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/e8ac5eb5-85de-4d10-9384-bd650217ea9c-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532330",
+              "name": "Hotcakes",
+              "description": "(590 Cal.)",
+              "displayPrice": "$5.49",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/bd30422d-bde1-4669-82cc-dc27499a3cd1-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-11169893",
+          "name": "McCafé",
+          "description": "",
+          "items": [
+            {
+              "id": "95532368",
+              "name": "Premium Roast Coffee",
+              "description": "(0 Cal.)",
+              "displayPrice": "$1.69",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a7e0c926-9110-427c-8662-13ba8e86459e-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532347",
+              "name": "Decaf Coffee",
+              "description": "(0 Cal.)",
+              "displayPrice": "$1.79",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/a7e0c926-9110-427c-8662-13ba8e86459e-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848505",
+              "name": "Hot Tea",
+              "description": "(10 Cal.)",
+              "displayPrice": "$1.67",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/06efacff-b7f6-44a7-9274-56e545e9beb6-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "102581552",
+              "name": "Iced Coffee",
+              "description": "(140 Cal.)",
+              "displayPrice": "$2.54",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/fd302c93-597a-4d6f-bb97-f76077e743ca-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "102581551",
+              "name": "Iced Caramel Coffee",
+              "description": "(140 Cal.)",
+              "displayPrice": "$2.54",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/61b21ae8-0fdd-45f6-9b8f-2b384a4aa783-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848486",
+              "name": "Iced Hazelnut Coffee",
+              "description": "(130 Cal.)",
+              "displayPrice": "$2.54",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/51fd24df-0e2e-45cd-a242-9c4a8db793be-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "102581553",
+              "name": "Iced French Vanilla Coffee",
+              "description": "(120 Cal.)",
+              "displayPrice": "$2.54",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1a35ef98-e578-4240-b4d8-d997fcdceb2e-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848529",
+              "name": "Iced Sugar Free Vanilla Coffee",
+              "description": "(140 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1a35ef98-e578-4240-b4d8-d997fcdceb2e-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532406",
+              "name": "Premium Hot Chocolate",
+              "description": "(380 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/41adc628-bd31-4385-b44a-42a3b4a779de-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848501",
+              "name": "Caramel Hot Chocolate",
+              "description": "(360 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/41adc628-bd31-4385-b44a-42a3b4a779de-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "153834413",
+              "name": "Blue Raspberry Slushie Minute Maid",
+              "description": "(190 Cal.)",
+              "displayPrice": "$2.31",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/44ada4ea-7dfb-4497-b753-2c9fe717564b-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "153834414",
+              "name": "Fruit Punch Slushie Minute Maid",
+              "description": "(170 Cal.)",
+              "displayPrice": "$2.31",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/d14520ee-695a-4d8b-bf08-e488ab45d829-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532424",
+              "name": "Mocha Frappé",
+              "description": "(420 Cal.)",
+              "displayPrice": "$2.51",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/cfffdc46-1bb1-4ea6-922f-7d9e76c1d637-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532417",
+              "name": "Caramel Frappé",
+              "description": "(420 Cal.)",
+              "displayPrice": "$2.51",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/8a5779d1-92ab-46be-b371-61727a7db025-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848545",
+              "name": "Caramel Macchiato",
+              "description": "(270 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/bd241a3e-05d5-41f3-ae57-496f51010b78-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848997",
+              "name": "Iced Caramel Macchiato",
+              "description": "(210 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/bd241a3e-05d5-41f3-ae57-496f51010b78-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532355",
+              "name": "Mocha",
+              "description": "(360 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/6896ec65-1d3d-4e7e-9c83-2b7fff6262fc-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532409",
+              "name": "Caramel Mocha",
+              "description": "(280 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/f7c839ea-807e-44dd-9cd2-c898c7d12a45-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532363",
+              "name": "Iced Mocha",
+              "description": "(310 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/285e56c8-f0ac-4dd4-a105-c7500a99d38f-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144849021",
+              "name": "Iced Caramel Mocha",
+              "description": "(240 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1d3bcc67-f91c-46e9-be4a-1e62c251d2a5-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532382",
+              "name": "Strawberry Banana Smoothie",
+              "description": "(190 Cal.)",
+              "displayPrice": "$2.51",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/16bd6709-634f-46f4-bd9c-4004129aa994-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532378",
+              "name": "Mango Pineapple Smoothie",
+              "description": "(200 Cal.)",
+              "displayPrice": "$2.51",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/49428703-2eb0-4b88-af4d-fe82d6c374f5-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "98536533",
+              "name": "Latte",
+              "description": "(150 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/4b886417-5ece-40f8-ae87-237057bdc0a7-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "98536530",
+              "name": "Caramel Latte",
+              "description": "(260 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/d096904f-fecb-4f66-a84f-ad50af296aed-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848948",
+              "name": "Hazelnut Latte",
+              "description": "(250 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/e28b19ed-a70c-4332-af03-bfff69a035d2-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "98536529",
+              "name": "French Vanilla Latte",
+              "description": "(240 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/01641437-d430-401c-967c-dc211261c8e9-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848507",
+              "name": "Sugar Free Vanilla Latte",
+              "description": "(180 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/01641437-d430-401c-967c-dc211261c8e9-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532394",
+              "name": "Iced Latte",
+              "description": "(90 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/302172aa-7a2a-40b9-8e1b-48f120af6095-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532398",
+              "name": "Iced Caramel Latte",
+              "description": "(190 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/df5d4601-c4a2-4914-a606-fd6d72051125-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848683",
+              "name": "Iced Hazelnut Latte",
+              "description": "(180 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/c331826a-aeaa-415b-b231-94635681e3a0-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532401",
+              "name": "Iced French Vanilla Latte",
+              "description": "(170 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/fd8d6b35-0a33-4b56-921a-8eabc50f630e-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848512",
+              "name": "Iced Sugar Free Vanilla Latte",
+              "description": "(130 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/b8561212-ea6e-4736-a9f9-ecc22a86d30d-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848514",
+              "name": "Cappuccino",
+              "description": "(120 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/469cd845-c0ea-4397-8b7e-5a84e72ac274-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848804",
+              "name": "Vanilla Cappuccino",
+              "description": "(200 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/b4a205d5-1e8e-47b7-9b48-a8c918b95c56-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848412",
+              "name": "Sugarfree Vanilla Cappuccino",
+              "description": "(140 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/b4a205d5-1e8e-47b7-9b48-a8c918b95c56-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848530",
+              "name": "Hazelnut Cappuccino",
+              "description": "(200 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/cfb2a664-7cf6-4511-9755-d786e1fa8f2c-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848500",
+              "name": "Caramel Cappuccino",
+              "description": "(220 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/e41c4605-42aa-47c3-874b-b5dc11541309-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144848536",
+              "name": "Americano",
+              "description": "(5 Cal.)",
+              "displayPrice": "$2.40",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/6dcdd42a-a4e1-457f-a665-e66eae424b1e-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-12490526",
+          "name": "McCafé Bakery",
+          "description": "",
+          "items": [
+            {
+              "id": "163321067",
+              "name": "1 Cookie",
+              "description": "(140 - 170 Cal.)",
+              "displayPrice": "$1.07",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/5d38359c-cb12-4a91-8960-6ae34a8db8ef-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "108094169",
+              "name": "2 Cookies",
+              "description": "(280 - 340 Cal.)",
+              "displayPrice": "$1.89",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/e22d409d-b20d-40e7-bea2-553945d3b5a3-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "108094170",
+              "name": "13 Cookie Tote",
+              "description": "Comes with 13 cookies. (1820 - 2210 Cal.)",
+              "displayPrice": "$10.79",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/163f56c9-e94b-4558-b45e-41e4b9f2f342-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "108094168",
+              "name": "Apple Pie",
+              "description": "(250 Cal.)",
+              "displayPrice": "$2.19",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/58dc5072-93cd-42aa-8221-0d65c7f6d019-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144849258",
+              "name": "2 Apple Pies",
+              "description": "(480 Cal.)",
+              "displayPrice": "$2.39",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/22679a1b-a613-45ef-a558-e1e97a881549-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "121418877",
+              "name": "Strawberry & Crème Pie",
+              "description": "(290 Cal.)",
+              "displayPrice": "$2.19",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/c57578eb-0f79-4469-939e-d854ec5e052c-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-18326015",
+          "name": "Condiments",
+          "description": "",
+          "items": [
+            {
+              "id": "166323156",
+              "name": "ADD Straw",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/84a53e1a-79c2-4d24-8881-1d23c65f110a-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323145",
+              "name": "ADD Napkin",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/aa918487-cc94-4e4b-b553-6caaa70d18eb-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323142",
+              "name": "ADD 2pc Cutlery",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1e36d6a3-084d-414f-a6be-9099b18a1dd3-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323147",
+              "name": "Spoons",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/82e735df-8ef2-461d-93e4-6210496e9aed-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323167",
+              "name": "Add Coffee Stirrer",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/24968108-b35b-4021-bd07-25f0ee99a497-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323169",
+              "name": "Creamer Packet",
+              "description": "(20 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/0fcd2264-83c7-464a-a2ae-24fc2bedf23c-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323143",
+              "name": "Sugar Packet",
+              "description": "(15 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/fd443d14-8681-4f95-9155-46cc410e9476-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323141",
+              "name": "Equal Packet",
+              "description": "(0 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/3aa92003-0afd-43ae-bd72-13deda79e1f4-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323165",
+              "name": "Pepper Packet",
+              "description": "(0 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/bef51a65-4571-49ea-bf00-39ada44c7838-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323160",
+              "name": "Salt Packet",
+              "description": "(0 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/4e7ccf37-3f0b-46d0-aba0-4ed0c3f9e076-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323171",
+              "name": "Splenda Packet",
+              "description": "(0 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/6634fe7a-6806-4898-a631-c58d1654b32e-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323166",
+              "name": "Ketchup Packet",
+              "description": "(10 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/53f4c95c-6b49-4c28-9d30-df5a9a5862c8-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323150",
+              "name": "Tangy BBQ Dipping Sauce",
+              "description": "(45 Cal.)",
+              "displayPrice": "$0.30",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/15c20654-d35e-45af-903e-ecfa5ffa2172-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323154",
+              "name": "Sweet N Sour Dipping Sauce",
+              "description": "(50 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/dc98b440-ce7b-424a-8afa-07e8dde56a45-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323157",
+              "name": "Honey Packet",
+              "description": "(50 Cal.)",
+              "displayPrice": "$0.50",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/8f89cefd-eb75-4870-b493-6376b3ff022a-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323170",
+              "name": "Hot Mustard Dipping Sauce",
+              "description": "(50 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/efde47f7-e1ba-4065-be11-cc4075d8c1b4-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323155",
+              "name": "Creamy Ranch Sauce",
+              "description": "(110 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/67710c2e-6bf8-48e9-aa5c-7b5924cb4984-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323153",
+              "name": "Mustard Packet",
+              "description": "(5 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/57177889-80f3-4681-9583-e10a59cf45eb-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323152",
+              "name": "Tangy Honey Mustard",
+              "description": "(60 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/9e64e82c-05f6-4c58-b468-2451875bcde2-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323151",
+              "name": "Spicy Buffalo",
+              "description": "(30 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/bb32b5df-159b-4f0c-926e-a699843cf76e-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323158",
+              "name": "Butter",
+              "description": "(35 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/292a3248-18c1-478c-9073-e48086903924-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323149",
+              "name": "Syrup",
+              "description": "(190 Cal.)",
+              "displayPrice": "$0.36",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/09871d7b-d4b1-4bb1-a7f9-b8913976ccd9-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323159",
+              "name": "Lite Mayo Packet",
+              "description": "(40 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/cd55b7dc-ea6c-47d8-b8bb-5ef479f201a9-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323168",
+              "name": "Grape Jam",
+              "description": "(40 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/ef947abc-8162-42ab-b4b0-6e4bbce21387-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323161",
+              "name": "Strawberry Preserve",
+              "description": "(35 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/51c0607a-c128-40b9-918a-f64bc991100f-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323162",
+              "name": "Hot Picante Salsa",
+              "description": "(5 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/615451e8-b718-48c6-9e03-b24c851ad90a-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323148",
+              "name": "Mild Picante Salsa",
+              "description": "(5 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/65a764d1-1d50-485a-815e-4ce1193cebc9-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "166323144",
+              "name": "Mayonnaise Packet",
+              "description": "(90 Cal.)",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/377e44e6-1af0-4cc6-bbba-81abf0c276d8-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-11169891",
+          "name": "Promotions",
+          "description": "",
+          "items": [
+            {
+              "id": "144849206",
+              "name": "Apple Pie",
+              "description": "(250 Cal.)",
+              "displayPrice": "$2.19",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/58dc5072-93cd-42aa-8221-0d65c7f6d019-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144849176",
+              "name": "2 Apple Pies",
+              "description": "(480 Cal.)",
+              "displayPrice": "$2.39",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/22679a1b-a613-45ef-a558-e1e97a881549-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-11169895",
+          "name": "Snacks, Sides & More",
+          "description": "",
+          "items": [
+            {
+              "id": "95532374",
+              "name": "Hash Browns",
+              "description": "(150 Cal.)",
+              "displayPrice": "$2.69",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/c3ee2bae-19df-4b7e-926b-4283604a9ca7-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532400",
+              "name": "Oatmeal",
+              "description": "(310 Cal.)",
+              "displayPrice": "$3.59",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/042c70eb-d742-4696-951a-affb3c4be85b-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532371",
+              "name": "Apple Slices",
+              "description": "(15 Cal.)",
+              "displayPrice": "$1.20",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/11616027-10b3-4d12-aab9-ea9f86666240-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532376",
+              "name": "Sausage",
+              "description": "(190 Cal.)",
+              "displayPrice": "$2.59",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/5517906f-5e12-4302-a21a-82f8e2f9926b-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "119873740",
+              "name": "Scrambled Eggs",
+              "description": "(140 Cal.)",
+              "displayPrice": "$2.39",
+              "imageUrl": "",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "105486322",
+              "name": "ADD Napkin",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/aa918487-cc94-4e4b-b553-6caaa70d18eb-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "105486324",
+              "name": "ADD 2pc Cutlery",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/1e36d6a3-084d-414f-a6be-9099b18a1dd3-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "105486321",
+              "name": "ADD Straw",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/84a53e1a-79c2-4d24-8881-1d23c65f110a-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "105486325",
+              "name": "Add Coffee Stirrer",
+              "description": "We want to help reduce waste. Please add to cart if you want napkins, straws, coffee stirrers, or cutlery.",
+              "displayPrice": "",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/24968108-b35b-4021-bd07-25f0ee99a497-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-11169890",
+          "name": "Beverages",
+          "description": "",
+          "items": [
+            {
+              "id": "95532320",
+              "name": "Coke®",
+              "description": "(150 Cal.)",
+              "displayPrice": "$1.32",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/3525a54f-0e97-45f3-85ca-94c4b94050a1-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532377",
+              "name": "Diet Coke®",
+              "description": "(0 Cal.)",
+              "displayPrice": "$1.20",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/cb5d3909-50cc-4d01-952f-d6a3cccfb381-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532333",
+              "name": "Sprite®",
+              "description": "(140 Cal.)",
+              "displayPrice": "$1.32",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/4e0c28b0-23a8-4ca4-8d96-d92629f4e01c-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532323",
+              "name": "Fanta Orange",
+              "description": "(170 Cal.)",
+              "displayPrice": "$1.32",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/380d3405-59e8-4ec8-8c78-e534bfbc39fc-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532381",
+              "name": "Dr Pepper®",
+              "description": "(140 Cal.)",
+              "displayPrice": "$1.32",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/eb331e60-9d6c-4846-8892-3c0ec3f1de87-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "124011414",
+              "name": "Diet Dr Pepper®",
+              "description": "(0 Cal.)",
+              "displayPrice": "$1.29",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/43af7309-8893-4eb0-985e-0028436e5d78-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532379",
+              "name": "Powerade®",
+              "description": "(80 Cal.)",
+              "displayPrice": "$1.32",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/7a298d64-04ce-415e-b7d5-25459da5fd57-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532353",
+              "name": "MIX by Sprite Tropic Berry",
+              "description": "(130 Cal.)",
+              "displayPrice": "$1.32",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/790107b1-a738-41bd-81a9-6b52217b3c47-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532350",
+              "name": "Minute Maid® Orange Juice",
+              "description": "(150 Cal.)",
+              "displayPrice": "$3.59",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/b2377684-b570-4b46-864a-4dab1b13be42-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532337",
+              "name": "Dasani® Bottled Water",
+              "description": "(0 Cal.)",
+              "displayPrice": "$2.39",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/31ba6fe2-51f9-4b66-aeef-4a86a21c7b00-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532342",
+              "name": "Milk",
+              "description": "(130 Cal.)",
+              "displayPrice": "$2.15",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/9e1c0485-c5bf-42e3-9265-f33a993fbd3d-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532384",
+              "name": "Chocolate Milk",
+              "description": "(130 Cal.)",
+              "displayPrice": "$2.15",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/af2cea4d-115d-43f3-94b7-e71e69766a3c-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532341",
+              "name": "Honest Kids® Organic Apple Juice Drink",
+              "description": "(35 Cal.)",
+              "displayPrice": "$2.15",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/4d552e36-cdc6-4214-8de2-19cea0b1a446-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "144849271",
+              "name": "Hot Tea",
+              "description": "(10 Cal.)",
+              "displayPrice": "$1.67",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/06efacff-b7f6-44a7-9274-56e545e9beb6-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532325",
+              "name": "Unsweetened Iced Tea",
+              "description": "(0 Cal.)",
+              "displayPrice": "$1.20",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/c9a6696c-c04c-4c09-b3db-4387cf7b2d7e-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "95532335",
+              "name": "Sweet Iced Tea",
+              "description": "(80 Cal.)",
+              "displayPrice": "$1.32",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/ff74f476-f8a4-4e0f-a9f4-9a635b4c156f-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        },
+        {
+          "id": "category-14019746",
+          "name": "Individual Items",
+          "description": "",
+          "items": [
+            {
+              "id": "123312387",
+              "name": "Bacon Egg Cheese Biscuit",
+              "description": "(450 Cal.)",
+              "displayPrice": "$5.99",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/62cd4b53-896a-4de8-aaed-407fbfc1c2b6-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312390",
+              "name": "Sausage Egg Biscuit",
+              "description": "(530 Cal.)",
+              "displayPrice": "$6.19",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/5340664f-1950-45aa-918c-5244c160365a-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312399",
+              "name": "Sausage Biscuit",
+              "description": "(460 Cal.)",
+              "displayPrice": "$3.99",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/8f5b2f01-006b-4b73-b546-f2d05a404766-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312395",
+              "name": "McChicken Biscuit",
+              "description": "(420 Cal.)",
+              "displayPrice": "$2.69",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/513f22fb-509f-4203-9af7-6701cce829ce-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312397",
+              "name": "Biscuit",
+              "description": "(270 Cal.)",
+              "displayPrice": "$1.91",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/c405b304-41fe-4180-bc16-7dd4046772b8-retina-large-jpeg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312398",
+              "name": "Egg McMuffin",
+              "description": "(300 Cal.)",
+              "displayPrice": "$6.19",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/5e668239-b2d8-486c-a90e-716dcb70d2f4-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312392",
+              "name": "Sausage Egg McMuffin",
+              "description": "(480 Cal.)",
+              "displayPrice": "$5.99",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/f2968050-93d2-454b-87bd-428d6e33a8cc-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312386",
+              "name": "Sausage McMuffin",
+              "description": "(400 Cal.)",
+              "displayPrice": "$3.99",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/cb8b2180-be3d-4bb9-a47f-eab0e31537be-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312388",
+              "name": "Bacon Egg Cheese McGriddle",
+              "description": "(420 Cal.)",
+              "displayPrice": "$6.59",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/c6475e73-3d4f-4f72-b575-b3b55ffa28b2-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312393",
+              "name": "Sausage McGriddle",
+              "description": "(430 Cal.)",
+              "displayPrice": "$4.99",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/042ce414-f0ce-4385-a7d7-4658b677ef19-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312396",
+              "name": "Sausage Egg Cheese McGriddle",
+              "description": "(550 Cal.)",
+              "displayPrice": "$6.79",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/60ce40e7-f195-4c56-91d0-eee9ea032af0-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312394",
+              "name": "Chicken McGriddle",
+              "description": "(390 Cal.)",
+              "displayPrice": "$2.69",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/38b9e93a-a161-44b1-81d0-cb773e95417d-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            },
+            {
+              "id": "123312391",
+              "name": "Sausage Burrito",
+              "description": "(300 Cal.)",
+              "displayPrice": "$2.49",
+              "imageUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photos/f4f60806-e2f8-4ed8-96fb-c259658901b4-retina-large.jpg",
+              "__typename": "MenuPageItem"
+            }
+          ],
+          "__typename": "MenuPageItemList"
+        }
+      ],
+      "disclaimersList": [
+        {
+          "id": "265",
+          "text": "Prices on this menu are set directly by the Merchant[.](https://doordash.com)",
+          "__typename": "StoreMenuDisclaimer"
+        },
+        {
+          "id": "133",
+          "text": "2,000 calories a day is used for general nutrition advice, but calorie needs vary. Additional nutrition information available [here](https://www.mcdonalds.com/us/en-us/about-our-food/nutrition-calculator.html)",
+          "__typename": "StoreMenuDisclaimer"
+        }
+      ],
+      "__typename": "StorePageFeedResult"
+    }
+  },
+  "extensions": {
+    "requestInfo": {
+      "version": 1,
+      "requestId": "fdabed04ba777bb6043fd5ee0e7f30ff",
+      "correlationId": "fdabed04ba777bb6043fd5ee0e7f30ff"
+    }
+  }
+}
