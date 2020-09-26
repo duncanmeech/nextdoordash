@@ -52,7 +52,7 @@ class StorePage extends React.Component {
             rel="preload"
             href="https://typography.doordash.com/TTNorms-Regular.woff2"
             type="font/woff2"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
             as="font"
           />
           <link
@@ -60,14 +60,14 @@ class StorePage extends React.Component {
             href="https://typography.doordash.com/TTNorms-Medium.woff2"
             type="font/woff2"
             as="font"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="https://typography.doordash.com/TTNorms-Bold.woff2"
             type="font/woff2"
             as="font"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
         </Head>
 
