@@ -15,14 +15,14 @@ export default class Menu extends React.PureComponent {
 
   render() {
     const { menu } = this.props;
-    const { name, id, items } = menu;
+    const { name: menuName, id, items } = menu;
 
     return (
       <div key={id} className="menu">
-        <div className="menu-name">{name}</div>
+        <div className="menu-name">{menuName}</div>
         <div className="grid">
           {items.map((item) => {
-            const { name, displayPrice, id, imageUrl } = item;
+            const { name, description, displayPrice, id, imageUrl } = item;
             return (
               <a key={id} onClick={(e) => this.onItemClicked(e, item)}>
                 <InView triggerOnce>
@@ -32,7 +32,10 @@ export default class Menu extends React.PureComponent {
                         <React.Fragment>
                           <div className="box-left">
                             <span className="item-name">{name}</span>
-                            <span className="price">{displayPrice}</span>
+                            <span className="item-description">
+                              {description}
+                            </span>
+                            <span className="item-price">{displayPrice}</span>
                           </div>
                           <div className="image">
                             <img
@@ -93,9 +96,16 @@ export default class Menu extends React.PureComponent {
             font-size: 16px;
             font-family: TTNorms-Bold;
             color: black;
+            margin-bottom: 8px;
           }
-          .price {
-            font-size: 16px;
+          .item-description {
+            font-size: 14px;
+            font-family: TTNorms;
+            color: gray;
+            margin-bottom: 8px;
+          }
+          .item-price {
+            font-size: 14px;
             color: gray;
           }
           .image {

@@ -1,8 +1,12 @@
+import dynamic from "next/dynamic";
 import fetch from "node-fetch";
 import Head from "next/head";
 import Hero from "../../components/hero";
 import Menu from "../../components/menu";
-import ItemModal from "../../components/item-modal";
+
+const ItemModal = dynamic(() => import("../../components/item-modal"), {
+  ssr: false,
+});
 
 class StorePage extends React.Component {
   state = {

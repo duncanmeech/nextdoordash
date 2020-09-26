@@ -62,6 +62,8 @@ export default class ItemModal extends React.PureComponent {
             outline: none;
             box-sizing: content-box;
             border: 4px solid transparent;
+            min-width: 200px;
+            max-width: 30vw;
           }
           .button:focus {
             border: 4px solid rgba(0, 0, 255, 0.4);
