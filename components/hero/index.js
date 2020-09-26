@@ -3,7 +3,7 @@ import { getCannonicalURI } from "../utils/image";
 
 const optimalImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=cover,height=250,width=1000,format=auto,quality=50/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1000,format=auto,quality=50/${source}`;
 };
 
 export default function ({ storeName, storeImage }) {
