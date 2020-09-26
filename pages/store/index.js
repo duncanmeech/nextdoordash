@@ -123,12 +123,21 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+// Better way to do this, but for now this works for local dev
+// and vercel since fetch etc needs an absolute path
+const getAbsoluteRoot = (context) => {
+  if (context.req.headers.host.indexOf("localhost") >= 0) {
+    return "http://localhost:3000";
+  }
+  return "https://nextdoordash.vercel.app";
+};
+
 export async function getServerSideProps(context) {
   const start = Date.now();
-  //const response = await fetch("http://localhost:3000/storepage.json");
-  const response = await fetch(
-    "https://nextdoordash.vercel.app/storepage.json"
-  );
+  const response = await fetch(`${getAbsoluteRoot(context)}/storepage.json`);
+  // const response = await fetch(
+  //   "https://nextdoordash.vercel.app/storepage.json"
+  // );
   const feed = await response.json();
   // await sleep(1000);
   return {
