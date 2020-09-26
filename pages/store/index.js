@@ -1,3 +1,4 @@
+import styles from "./store.module.css";
 import dynamic from "next/dynamic";
 import fetch from "node-fetch";
 import Head from "next/head";
@@ -47,14 +48,35 @@ class StorePage extends React.Component {
         <Head>
           <title>Doordash - Store Page</title>
           <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="preload"
+            href="https://typography.doordash.com/TTNorms-Regular.woff2"
+            type="font/woff2"
+            crossorigin="anonymous"
+            as="font"
+          />
+          <link
+            rel="preload"
+            href="https://typography.doordash.com/TTNorms-Medium.woff2"
+            type="font/woff2"
+            as="font"
+            crossorigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="https://typography.doordash.com/TTNorms-Bold.woff2"
+            type="font/woff2"
+            as="font"
+            crossorigin="anonymous"
+          />
         </Head>
 
         {itemModalOpen && (
           <ItemModal menuItem={selectedItem} closed={this.onCloseItemModal} />
         )}
 
-        <div className="page">
-          <div className="container">
+        <div className={styles.page}>
+          <div className={styles.container}>
             <Hero
               storeName={storeName + " " + timing}
               storeImage={storeImage}
@@ -69,51 +91,6 @@ class StorePage extends React.Component {
               ))}
           </div>
         </div>
-
-        <style jsx>{`
-          .menu {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: left;
-            width: 100%;
-          }
-          .page {
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            font-family: TTNorms, -apple-system, BlinkMacSystemFont, Segoe UI,
-              Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-              Helvetica Neue, sans-serif;
-          }
-          .container {
-            width: calc(100% - 40px);
-            max-width: 1000px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 20px;
-          }
-
-          @font-face {
-            font-family: "TTNorms";
-            src: url("https://typography.doordash.com/TTNorms-Regular.woff2")
-              format("woff");
-          }
-
-          @font-face {
-            font-family: "TTNorms-Medium";
-            src: url("https://typography.doordash.com/TTNorms-Medium.woff2")
-              format("woff");
-          }
-
-          @font-face {
-            font-family: "TTNorms-Bold";
-            src: url("https://typography.doordash.com/TTNorms-Bold.woff2")
-              format("woff");
-          }
-        `}</style>
       </React.Fragment>
     );
   }

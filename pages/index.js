@@ -79,7 +79,7 @@ function Home({ stores }) {
  * @param  ctx
  */
 Home.getInitialProps = async (ctx) => {
-  return StoreFeed(1000);
+  return StoreFeed(0);
 };
 
 export default Home;

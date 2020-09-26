@@ -1,4 +1,4 @@
-import { Mag, RightArrow } from "./icons";
+import { Mag, RightArrow } from "../icons";
 
 export default function ({ activated }) {
   return (

@@ -1,0 +1,65 @@
+.menu {
+  width: 100%;
+  margin-top: 40px;
+}
+.menuname {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-family: TTNorms-Bold;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.box {
+  width: 100%;
+  height: 120px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  cursor: pointer;
+}
+.boxleft {
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.itemname {
+  font-size: 16px;
+  font-family: TTNorms-Bold;
+  color: black;
+  margin-bottom: 8px;
+}
+.itemdescription {
+  font-size: 14px;
+  font-family: TTNorms;
+  color: gray;
+  margin-bottom: 8px;
+}
+.itemprice {
+  font-size: 14px;
+  color: gray;
+}
+.image {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
