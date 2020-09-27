@@ -23,6 +23,7 @@ $triangleWidth: 450px;
   width: 100%;
   height: $heroContainerHeight;
   position: relative;
+  overflow: hidden;
 }
 .imageWrapper {
   position: absolute;
