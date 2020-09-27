@@ -1,10 +1,16 @@
-import styles from "./store.module.css";
+import styles from "./store.module.scss";
 import dynamic from "next/dynamic";
 import fetch from "node-fetch";
-import Head from "next/head";
+import DocumentHead from "./document-head";
 import Hero from "../../components/hero";
 import Menu from "../../components/menu";
+import Header from "../../components/header";
+import CheckoutSidebar from "../../components/checkout-sidebar";
 
+/**
+ * import client side AND only as needed. The bundle containing
+ * this component will ONLY be loaded when an <ItemModal /> is actually rendered.
+ */
 const ItemModal = dynamic(() => import("../../components/item-modal"), {
   ssr: false,
 });
@@ -36,7 +42,7 @@ class StorePage extends React.Component {
   };
 
   render() {
-    const { storeName, storeImage, timing } = this.props;
+    const { storeName, storeImage, logoImage } = this.props;
     const { storepageFeed, itemModalOpen, selectedItem } = this.state;
     let menus;
     if (storepageFeed) {
@@ -45,41 +51,13 @@ class StorePage extends React.Component {
 
     return (
       <React.Fragment>
-        <Head>
-          <title>Doordash - Store Page</title>
-          <link rel="icon" href="/favicon.ico" />
-          <link
-            rel="preload"
-            href="https://typography.doordash.com/TTNorms-Regular.woff2"
-            type="font/woff2"
-            crossorigin="anonymous"
-            as="font"
-          />
-          <link
-            rel="preload"
-            href="https://typography.doordash.com/TTNorms-Medium.woff2"
-            type="font/woff2"
-            as="font"
-            crossorigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="https://typography.doordash.com/TTNorms-Bold.woff2"
-            type="font/woff2"
-            as="font"
-            crossorigin="anonymous"
-          />
-        </Head>
-
-        {itemModalOpen && (
-          <ItemModal menuItem={selectedItem} closed={this.onCloseItemModal} />
-        )}
-
-        <div className={styles.page}>
-          <div className={styles.container}>
+        <DocumentHead />
+        <div className={styles.nonCheckout}>
+          <div className={styles.content}>
             <Hero
-              storeName={storeName + " " + timing}
+              storeName={storeName}
               storeImage={storeImage}
+              logoImage={logoImage}
             />
             {menus &&
               menus.map((menu, index) => (
@@ -91,13 +69,16 @@ class StorePage extends React.Component {
               ))}
           </div>
         </div>
+        <div className={styles.checkout}>
+          <CheckoutSidebar />
+        </div>
+        <Header />
+        {itemModalOpen && (
+          <ItemModal menuItem={selectedItem} closed={this.onCloseItemModal} />
+        )}
       </React.Fragment>
     );
   }
-}
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // Better way to do this, but for now this works for local dev
@@ -109,19 +90,19 @@ const getAbsoluteRoot = (context) => {
   return "https://nextdoordash.vercel.app";
 };
 
+/**
+ * Get the server side properties for the store page. Generally this
+ * is above the fold content for the page and necessary API calls.
+ * @param {} context
+ */
 export async function getServerSideProps(context) {
-  const start = Date.now();
   const response = await fetch(`${getAbsoluteRoot(context)}/storepage.json`);
-  // const response = await fetch(
-  //   "https://nextdoordash.vercel.app/storepage.json"
-  // );
   const feed = await response.json();
-  // await sleep(1000);
   return {
     props: {
       storeName: feed.data.storepageFeed.storeHeader.name,
       storeImage: feed.data.storepageFeed.storeHeader.businessHeaderImgUrl,
-      timing: Date.now() - start,
+      logoImage: feed.data.storepageFeed.storeHeader.coverSquareImgUrl,
     },
   };
 }

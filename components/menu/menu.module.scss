@@ -1,8 +1,11 @@
+@import "../../styles/doordash.scss";
+
 .menu {
   width: 100%;
   margin-top: 40px;
 }
 .menuname {
+  color: $primaryText;
   font-size: 24px;
   margin-bottom: 8px;
   font-family: TTNorms-Bold;
@@ -13,7 +16,7 @@
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
-@media (max-width: 800px) {
+@media (max-width: $breakpointTablet) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -21,7 +24,7 @@
 .box {
   width: 100%;
   height: 120px;
-  border: 1px solid lightgray;
+  border: 1px solid $gray;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -40,18 +43,18 @@
 .itemname {
   font-size: 16px;
   font-family: TTNorms-Bold;
-  color: black;
+  color: $primaryText;
   margin-bottom: 8px;
 }
 .itemdescription {
   font-size: 14px;
   font-family: TTNorms;
-  color: gray;
+  color: $secondaryText;
   margin-bottom: 8px;
 }
 .itemprice {
   font-size: 14px;
-  color: gray;
+  color: $secondaryText;
 }
 .image {
   width: 120px;

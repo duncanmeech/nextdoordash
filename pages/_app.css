@@ -1,34 +1,28 @@
-.page {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
   font-family: TTNorms, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-.container {
-  width: calc(100% - 40px);
-  max-width: 1000px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
 }
 
 @font-face {
   font-family: "TTNorms";
+  font-display: swap;
   src: url("https://typography.doordash.com/TTNorms-Regular.woff2")
     format("woff");
 }
 
 @font-face {
   font-family: "TTNorms-Medium";
+  font-display: swap;
   src: url("https://typography.doordash.com/TTNorms-Medium.woff2")
     format("woff");
 }
 
 @font-face {
   font-family: "TTNorms-Bold";
+  font-display: swap;
   src: url("https://typography.doordash.com/TTNorms-Bold.woff2") format("woff");
 }

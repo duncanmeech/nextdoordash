@@ -1,4 +1,5 @@
 import styles from "./item-modal.module.css";
+import ReactDOM from "react-dom";
 import { getCannonicalURI } from "../utils/image";
 
 const optimalImageUrl = (imageUrl) => {
@@ -11,7 +12,7 @@ export default class ItemModal extends React.PureComponent {
     const { menuItem, closed } = this.props;
     const { imageUrl } = menuItem;
 
-    return (
+    return ReactDOM.createPortal(
       <div className={styles.modalOverlay}>
         <div className={styles.modal}>
           <img className={styles.image} src={optimalImageUrl(imageUrl)} />
@@ -19,7 +20,8 @@ export default class ItemModal extends React.PureComponent {
             Close
           </button>
         </div>
-      </div>
+      </div>,
+      document.body
     );
   }
 }

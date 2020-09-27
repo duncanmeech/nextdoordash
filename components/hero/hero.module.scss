@@ -1,0 +1,81 @@
+@import "../../styles/doordash.scss";
+
+$heroHeight: 250px;
+$heroContainerHeight: 300px;
+$triangleHeight: 30px;
+$triangleWidth: 450px;
+$logoSize: 76px;
+
+.hero {
+  width: 100%;
+  color: $black;
+  margin-top: 20px;
+}
+.imageContainer {
+  width: 100%;
+  height: $heroContainerHeight;
+  position: relative;
+}
+.imageWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 11px;
+  overflow: hidden;
+  width: 100%;
+  height: $heroHeight;
+}
+.image {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: $heroHeight;
+  object-fit: cover;
+  object-position: left;
+}
+.triangle {
+  position: absolute;
+  z-index: 1;
+  top: calc(#{$heroHeight} - #{$triangleHeight});
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $triangleHeight 0 0 $triangleWidth;
+  border-color: transparent transparent transparent #ffffff;
+  /* for better aliasing, force a 3d render */
+  transform: rotate(360deg);
+}
+.logoContainer {
+  z-index: 2;
+  width: $logoSize + 4px;
+  height: $logoSize + 4px;
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+}
+.logoInner {
+  height: $logoSize;
+  position: relative;
+}
+.logoImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  font-size: 40px;
+  font-family: TTNorms-Bold;
+}

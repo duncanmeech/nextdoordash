@@ -1,0 +1,19 @@
+@import "../../styles/doordash.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $headerHeight;
+  border-bottom: 1px solid $gray;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-right: 20px;
+}

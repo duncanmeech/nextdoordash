@@ -1,0 +1,35 @@
+@import "../../styles/doordash.scss";
+
+$nonCheckooutPadding: 20px;
+$nonCheckoutMaxWidth: 1000px;
+
+.nonCheckout {
+  width: calc(100vw - #{$checkoutSidebarWidth});
+  min-height: 100vh;
+  display: inline-flex;
+  justify-content: center;
+  padding: $headerHeight 0 0 0;
+
+  @media (max-width: $breakpointDesktop) {
+    width: 100%;
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: $nonCheckoutMaxWidth;
+  padding: 0 $nonCheckooutPadding;
+}
+
+.checkout {
+  width: $checkoutSidebarWidth;
+  height: calc(100vh - #{$headerHeight});
+  flex-shrink: 0;
+  position: fixed;
+  top: $headerHeight;
+  right: 0;
+
+  @media (max-width: $breakpointDesktop) {
+    display: none;
+  }
+}

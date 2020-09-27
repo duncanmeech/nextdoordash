@@ -1,4 +1,4 @@
-import styles from "./menu.module.css";
+import styles from "./menu.module.scss";
 import { getCannonicalURI } from "../utils/image";
 import { InView } from "react-intersection-observer";
 
