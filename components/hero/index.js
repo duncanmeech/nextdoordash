@@ -1,14 +1,17 @@
 import styles from "./hero.module.scss";
 import { getCannonicalURI } from "../utils/image";
 
+// destructure SCSS variables from the style object
+const { heroHeight, logoSize } = styles;
+
 const optimalHeroImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1000,format=auto,quality=50/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=1000,height=${heroHeight},format=auto,quality=50/${source}`;
 };
 
 const optimalLogoImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=75,format=auto,quality=72/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=${logoSize},format=auto,quality=72/${source}`;
 };
 
 export default function ({ storeName, storeImage, logoImage }) {

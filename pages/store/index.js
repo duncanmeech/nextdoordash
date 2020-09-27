@@ -96,13 +96,13 @@ const getAbsoluteRoot = (context) => {
  * @param {} context
  */
 export async function getServerSideProps(context) {
-  const response = await fetch(`${getAbsoluteRoot(context)}/storepage.json`);
+  const response = await fetch(`${getAbsoluteRoot(context)}/storeheader.json`);
   const feed = await response.json();
   return {
     props: {
-      storeName: feed.data.storepageFeed.storeHeader.name,
-      storeImage: feed.data.storepageFeed.storeHeader.businessHeaderImgUrl,
-      logoImage: feed.data.storepageFeed.storeHeader.coverSquareImgUrl,
+      storeName: feed.storeHeader.name,
+      storeImage: feed.storeHeader.businessHeaderImgUrl,
+      logoImage: feed.storeHeader.coverSquareImgUrl,
     },
   };
 }

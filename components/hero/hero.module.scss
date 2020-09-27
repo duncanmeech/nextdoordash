@@ -1,10 +1,18 @@
 @import "../../styles/doordash.scss";
 
-$heroHeight: 250px;
+// unitless measurements because we want to export to JavaScript
+$heroHeight: 250;
+$logoSize: 76;
+
 $heroContainerHeight: 300px;
 $triangleHeight: 30px;
 $triangleWidth: 450px;
-$logoSize: 76px;
+
+:export {
+  // export so we can generate an optimal image for the hero area
+  heroHeight: $heroHeight;
+  logoSize: $logoSize;
+}
 
 .hero {
   width: 100%;
@@ -23,7 +31,7 @@ $logoSize: 76px;
   border-radius: 11px;
   overflow: hidden;
   width: 100%;
-  height: $heroHeight;
+  height: $heroHeight + px;
 }
 .image {
   position: absolute;
@@ -33,14 +41,14 @@ $logoSize: 76px;
   right: 0;
   bottom: 0;
   width: 100%;
-  height: $heroHeight;
+  height: $heroHeight + px;
   object-fit: cover;
   object-position: left;
 }
 .triangle {
   position: absolute;
   z-index: 1;
-  top: calc(#{$heroHeight} - #{$triangleHeight});
+  top: calc(#{$heroHeight + px} - #{$triangleHeight});
   left: 0;
   width: 0;
   height: 0;
@@ -64,7 +72,7 @@ $logoSize: 76px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
 }
 .logoInner {
-  height: $logoSize;
+  height: $logoSize + px;
   position: relative;
 }
 .logoImage {

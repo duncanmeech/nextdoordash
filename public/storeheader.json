@@ -1,0 +1,74 @@
+{
+  "storeHeader": {
+    "id": "658900",
+    "name": "McDonald's",
+    "description": "Fast Food, Burgers, Ice Cream, Breakfast, American (New), Dinner",
+    "priceRange": 1,
+    "offersDelivery": true,
+    "offersPickup": false,
+    "offersGroupOrder": true,
+    "isConvenience": false,
+    "isDashpassPartner": true,
+    "address": {
+      "city": "San Francisco",
+      "street": "609 Market Street",
+      "displayAddress": "609 Market St, San Francisco, CA 94105, USA",
+      "cityLink": "/food-delivery/san-francisco-ca-restaurants/",
+      "__typename": "StoreHeaderAddress"
+    },
+    "business": {
+      "id": "5579",
+      "name": "McDonald's",
+      "link": "/business/mcdonald-s-5579/",
+      "__typename": "Business"
+    },
+    "deliveryFeeLayout": {
+      "title": "$1.99",
+      "subtitle": "delivery fee",
+      "isSurging": false,
+      "displayDeliveryFee": "$1.99 delivery fee",
+      "__typename": "DeliveryFeeLayout"
+    },
+    "deliveryFeeTooltip": {
+      "title": "",
+      "description": "",
+      "__typename": "ModalContent"
+    },
+    "coverImgUrl": "https://cdn.doordash.com/media/restaurant%2Fcover%2FMcD_GoldenArches_1235_RGB_1.jpg",
+    "coverSquareImgUrl": "https://cdn.doordash.com/media/restaurant%2Fcover_square%2FMcDonalds_logo.png",
+    "businessHeaderImgUrl": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1000,format=auto,quality=72/https://cdn.doordash.com/media/store%2Fheader%2F5579.jpg",
+    "ratings": {
+      "numRatings": 2000,
+      "numRatingsDisplayString": "2,400+ ratings",
+      "averageRating": 4.6,
+      "isNewlyAdded": false,
+      "__typename": "StoreRatings"
+    },
+    "distanceFromConsumer": {
+      "value": 0.5,
+      "label": "mi",
+      "__typename": "DistanceFromConsumer"
+    },
+    "status": {
+      "delivery": {
+        "isAvailable": true,
+        "minutes": "15 - 25",
+        "displayUnavailableStatus": "",
+        "unavailableReason": "",
+        "isTooFarFromConsumer": false,
+        "isStoreInactive": false,
+        "__typename": "OperatingStatus"
+      },
+      "pickup": {
+        "isAvailable": false,
+        "minutes": "10 - 20",
+        "displayUnavailableStatus": "",
+        "unavailableReason": "",
+        "isStoreInactive": false,
+        "__typename": "OperatingStatus"
+      },
+      "__typename": "DeliveryPickupStatus"
+    },
+    "__typename": "StoreHeader"
+  }
+}
