@@ -11,7 +11,9 @@ const optimalHeroImageUrl = (imageUrl) => {
 
 const optimalLogoImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=${logoSize},format=auto,quality=72/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,height=${
+    logoSize * 3
+  },format=auto,quality=72/${source}`;
 };
 
 export default function ({ storeName, storeImage, logoImage }) {
@@ -32,6 +34,7 @@ export default function ({ storeName, storeImage, logoImage }) {
             className={styles.logoImage}
             src={optimalLogoImageUrl(logoImage)}
             alt={storeName}
+            loading="eager"
           />
         </div>
       </div>

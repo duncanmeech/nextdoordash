@@ -23,7 +23,7 @@ class StorePage extends React.Component {
   };
 
   componentDidMount() {
-    fetch("/storepage.json").then((response) => {
+    fetch("/storepage-cheese.json").then((response) => {
       response.json().then((json) => {
         const { data } = json;
         const { storepageFeed } = data;
@@ -96,7 +96,9 @@ const getAbsoluteRoot = (context) => {
  * @param {} context
  */
 export async function getServerSideProps(context) {
-  const response = await fetch(`${getAbsoluteRoot(context)}/storeheader.json`);
+  const response = await fetch(
+    `${getAbsoluteRoot(context)}/storeheader-cheese.json`
+  );
   const feed = await response.json();
   return {
     props: {

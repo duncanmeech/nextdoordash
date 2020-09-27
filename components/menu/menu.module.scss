@@ -1,5 +1,11 @@
 @import "../../styles/doordash.scss";
 
+$imageSize: 120;
+
+:export {
+  imageSize: $imageSize;
+}
+
 .menu {
   width: 100%;
   margin-top: 40px;
@@ -23,7 +29,7 @@
 }
 .box {
   width: 100%;
-  height: 120px;
+  height: $imageSize + px;
   border: 1px solid $gray;
   border-radius: 5px;
   display: flex;
@@ -34,7 +40,7 @@
 .boxleft {
   width: 100%;
   height: 100%;
-  padding-left: 16px;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,14 +57,25 @@
   font-family: TTNorms;
   color: $secondaryText;
   margin-bottom: 8px;
+  line-height: 20px;
+  letter-spacing: 0ch;
+  text-transform: none;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 40px;
+  white-space: normal;
 }
 .itemprice {
   font-size: 14px;
   color: $secondaryText;
 }
 .image {
-  width: 120px;
-  height: 120px;
+  width: $imageSize + px;
+  height: $imageSize + px;
   flex-shrink: 0;
 }
 .img {

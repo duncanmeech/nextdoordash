@@ -1,0 +1,150 @@
+{
+  "storeHeader": {
+    "id": "101041",
+    "name": "The Cheesecake Factory",
+    "description": "American",
+    "priceRange": 2,
+    "offersDelivery": true,
+    "offersPickup": true,
+    "offersGroupOrder": true,
+    "isConvenience": false,
+    "isDashpassPartner": true,
+    "address": {
+      "city": "San Francisco",
+      "street": "251 Geary Street",
+      "displayAddress": "251 Geary St, San Francisco, CA 94102, USA",
+      "cityLink": "/food-delivery/san-francisco-ca-restaurants/",
+      "__typename": "StoreHeaderAddress"
+    },
+    "business": {
+      "id": "105",
+      "name": "The Cheesecake Factory",
+      "link": "/business/the-cheesecake-factory-105/",
+      "__typename": "Business"
+    },
+    "businessTags": [
+      {
+        "name": "Dessert",
+        "link": "/dessert-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Dinner",
+        "link": "/dinner-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Sandwiches",
+        "link": "/sandwiches-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Burgers",
+        "link": "/burgers-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Italian",
+        "link": "/italian-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Salads",
+        "link": "/salads-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "American (New)",
+        "link": "/american--new--near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Catering",
+        "link": "/catering-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Breakfast",
+        "link": "/breakfast-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Healthy",
+        "link": "/healthy-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Pickup",
+        "link": "/pickup-near-me/",
+        "__typename": "BusinessTag"
+      },
+      {
+        "name": "Takeout",
+        "link": "/takeout-near-me/",
+        "__typename": "BusinessTag"
+      }
+    ],
+    "deliveryFeeLayout": {
+      "title": "$4.99",
+      "subtitle": "delivery fee",
+      "isSurging": false,
+      "displayDeliveryFee": "$4.99 delivery fee",
+      "__typename": "DeliveryFeeLayout"
+    },
+    "deliveryFeeTooltip": {
+      "title": "",
+      "description": "",
+      "__typename": "ModalContent"
+    },
+    "coverImgUrl": "https://cdn.doordash.com/media/restaurant%2Fcover%2FThe_Cheesecake_Factory.png",
+    "coverSquareImgUrl": "https://cdn.doordash.com/media/restaurant%2Fcover_square%2Fcheesecake.png",
+    "businessHeaderImgUrl": "https://cdn.doordash.com/media/store%2Fheader%2F9ec820ff-33d3-47b2-9627-5ace48d7a3c9.jpg",
+    "ratings": {
+      "numRatings": 2000,
+      "numRatingsDisplayString": "10,900+ ratings",
+      "averageRating": 4.3,
+      "isNewlyAdded": false,
+      "__typename": "StoreRatings"
+    },
+    "distanceFromConsumer": {
+      "value": 0.8,
+      "label": "mi",
+      "__typename": "DistanceFromConsumer"
+    },
+    "enableSwitchToPickup": true,
+    "asapStatus": {
+      "unavailableStatus": "NULL",
+      "displayUnavailableStatus": "",
+      "unavailableReason": "",
+      "displayUnavailableReason": {
+        "title": "",
+        "subtitle": "",
+        "__typename": "UnavailableReason"
+      },
+      "isAvailable": true,
+      "unavailableReasonKeysList": [],
+      "__typename": "AsapStatus"
+    },
+    "status": {
+      "delivery": {
+        "isAvailable": true,
+        "minutes": "34 - 44",
+        "displayUnavailableStatus": "",
+        "unavailableReason": "",
+        "isTooFarFromConsumer": false,
+        "isStoreInactive": false,
+        "__typename": "OperatingStatus"
+      },
+      "pickup": {
+        "isAvailable": true,
+        "minutes": "28 - 38",
+        "displayUnavailableStatus": "",
+        "unavailableReason": "",
+        "isStoreInactive": false,
+        "__typename": "OperatingStatus"
+      },
+      "__typename": "DeliveryPickupStatus"
+    },
+    "__typename": "StoreHeader"
+  }
+}

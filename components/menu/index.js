@@ -2,9 +2,11 @@ import styles from "./menu.module.scss";
 import { getCannonicalURI } from "../utils/image";
 import { InView } from "react-intersection-observer";
 
+const { imageSize } = styles;
+
 const optimalImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,height=120,format=auto/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=${imageSize},height=${imageSize},format=auto,quality=50/${source}`;
 };
 
 export default class Menu extends React.PureComponent {
@@ -40,12 +42,14 @@ export default class Menu extends React.PureComponent {
                               {displayPrice}
                             </span>
                           </div>
-                          <div className={styles.image}>
-                            <img
-                              className={styles.img}
-                              src={optimalImageUrl(imageUrl)}
-                            />
-                          </div>
+                          {imageUrl && (
+                            <div className={styles.image}>
+                              <img
+                                className={styles.img}
+                                src={optimalImageUrl(imageUrl)}
+                              />
+                            </div>
+                          )}
                         </React.Fragment>
                       )}
                     </div>
