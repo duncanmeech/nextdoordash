@@ -1,6 +1,6 @@
 @import "../../styles/doordash.scss";
 
-$imageSize: 120;
+$imageSize: 125;
 
 :export {
   imageSize: $imageSize;
@@ -39,6 +39,8 @@ $imageSize: 120;
 }
 .boxleft {
   width: 100%;
+  // css hack to make text-overflow: ellipsis work on text items
+  min-width: 0;
   height: 100%;
   padding: 0 16px;
   display: flex;
@@ -51,6 +53,13 @@ $imageSize: 120;
   font-family: TTNorms-Bold;
   color: $primaryText;
   margin-bottom: 8px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  width: 100%;
+  min-width: 0;
 }
 .itemdescription {
   font-size: 14px;

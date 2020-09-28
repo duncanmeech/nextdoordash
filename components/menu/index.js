@@ -12,7 +12,6 @@ const optimalImageUrl = (imageUrl) => {
 export default class Menu extends React.PureComponent {
   onItemClicked(e, item) {
     const { onOpenItemModal } = this.props;
-    e.preventDefault();
     onOpenItemModal(item);
   }
 
@@ -27,35 +26,39 @@ export default class Menu extends React.PureComponent {
           {items.map((item) => {
             const { name, description, displayPrice, id, imageUrl } = item;
             return (
-              <a key={id} onClick={(e) => this.onItemClicked(e, item)}>
-                <InView triggerOnce>
-                  {({ inView, ref }) => (
-                    <div className={styles.box} ref={ref}>
-                      {inView && (
-                        <React.Fragment>
-                          <div className={styles.boxleft}>
-                            <span className={styles.itemname}>{name}</span>
-                            <span className={styles.itemdescription}>
-                              {description}
-                            </span>
-                            <span className={styles.itemprice}>
-                              {displayPrice}
-                            </span>
+              <InView triggerOnce>
+                {({ inView, ref }) => (
+                  <div
+                    className={styles.box}
+                    ref={ref}
+                    onClick={(e) => this.onItemClicked(e, item)}
+                  >
+                    {inView && (
+                      <React.Fragment>
+                        <div className={styles.boxleft}>
+                          <span className={styles.itemname}>
+                            {name + " " + name}
+                          </span>
+                          <span className={styles.itemdescription}>
+                            {description}
+                          </span>
+                          <span className={styles.itemprice}>
+                            {displayPrice}
+                          </span>
+                        </div>
+                        {imageUrl && (
+                          <div className={styles.image}>
+                            <img
+                              className={styles.img}
+                              src={optimalImageUrl(imageUrl)}
+                            />
                           </div>
-                          {imageUrl && (
-                            <div className={styles.image}>
-                              <img
-                                className={styles.img}
-                                src={optimalImageUrl(imageUrl)}
-                              />
-                            </div>
-                          )}
-                        </React.Fragment>
-                      )}
-                    </div>
-                  )}
-                </InView>
-              </a>
+                        )}
+                      </React.Fragment>
+                    )}
+                  </div>
+                )}
+              </InView>
             );
           })}
         </div>

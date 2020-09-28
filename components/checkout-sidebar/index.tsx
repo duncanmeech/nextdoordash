@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./checkout-sidebar.module.scss";
 
 export default class CheckoutSidebar extends React.PureComponent {
