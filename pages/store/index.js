@@ -1,6 +1,5 @@
 import styles from "./store.module.scss";
 import dynamic from "next/dynamic";
-import fetch from "node-fetch";
 import DocumentHead from "./document-head";
 import Hero from "../../components/hero";
 import Menu from "../../components/menu";
