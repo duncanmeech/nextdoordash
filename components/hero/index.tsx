@@ -15,32 +15,40 @@ const optimalLogoImageUrl = (imageUrl) => {
   return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,height=${logoSize},format=auto,quality=72/${source}`;
 };
 
-export default function ({ storeName, storeImage, logoImage }) {
+type Props = {
+  storeName: string;
+  storeImage?: string;
+  logoImage?: string;
+};
+
+export default function ({ storeName, storeImage, logoImage }: Props) {
   return (
     <div className={styles.hero}>
-      <div className={styles.imageContainer}>
-        <div className={styles.imageWrapper}>
-          <img
-            className={styles.image}
-            src={optimalHeroImageUrl(storeImage)}
-            alt={storeName}
-            loading="eager"
-          />
+      {storeImage && (
+        <div className={styles.imageContainer}>
+          <div className={styles.imageWrapper}>
+            <img
+              className={styles.image}
+              src={optimalHeroImageUrl(storeImage)}
+              alt={storeName}
+              loading="eager"
+            />
+          </div>
+          {logoImage && (
+            <Fragment>
+              <div className={styles.triangle} />
+              <div className={styles.logoContainer}>
+                <div className={styles.logoInner} />
+                <img
+                  className={styles.logoImage}
+                  src={optimalLogoImageUrl(logoImage)}
+                  alt={storeName}
+                />
+              </div>
+            </Fragment>
+          )}
         </div>
-        {logoImage && (
-          <Fragment>
-            <div className={styles.triangle} />
-            <div className={styles.logoContainer}>
-              <div className={styles.logoInner} />
-              <img
-                className={styles.logoImage}
-                src={optimalLogoImageUrl(logoImage)}
-                alt={storeName}
-              />
-            </div>
-          </Fragment>
-        )}
-      </div>
+      )}
       <div className={styles.name}>{storeName}</div>
     </div>
   );

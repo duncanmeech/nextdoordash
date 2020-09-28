@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./store.module.scss";
 import dynamic from "next/dynamic";
 import DocumentHead from "./document-head";
@@ -14,10 +15,16 @@ const ItemModal = dynamic(() => import("../../components/item-modal"), {
   ssr: false,
 });
 
-class StorePage extends React.Component {
+type Props = {
+  storeName: string;
+  storeImage?: string;
+  logoImage?: string;
+};
+
+class StorePage extends React.Component<Props> {
   state = {
     itemModalOpen: false,
-    storePageFeed: null,
+    storepageFeed: null,
     selectedItem: null,
   };
 
