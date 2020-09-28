@@ -1,3 +1,4 @@
+import React, { Fragment } from "react";
 import styles from "./hero.module.scss";
 import { getCannonicalURI } from "../utils/image";
 
@@ -11,9 +12,7 @@ const optimalHeroImageUrl = (imageUrl) => {
 
 const optimalLogoImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,height=${
-    logoSize * 3
-  },format=auto,quality=72/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,height=${logoSize},format=auto,quality=72/${source}`;
 };
 
 export default function ({ storeName, storeImage, logoImage }) {
@@ -25,18 +24,22 @@ export default function ({ storeName, storeImage, logoImage }) {
             className={styles.image}
             src={optimalHeroImageUrl(storeImage)}
             alt={storeName}
-          />
-        </div>
-        <div className={styles.triangle} />
-        <div className={styles.logoContainer}>
-          <div className={styles.logoInner} />
-          <img
-            className={styles.logoImage}
-            src={optimalLogoImageUrl(logoImage)}
-            alt={storeName}
             loading="eager"
           />
         </div>
+        {logoImage && (
+          <Fragment>
+            <div className={styles.triangle} />
+            <div className={styles.logoContainer}>
+              <div className={styles.logoInner} />
+              <img
+                className={styles.logoImage}
+                src={optimalLogoImageUrl(logoImage)}
+                alt={storeName}
+              />
+            </div>
+          </Fragment>
+        )}
       </div>
       <div className={styles.name}>{storeName}</div>
     </div>
