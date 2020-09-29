@@ -27,21 +27,21 @@ export default class MyApp extends App {
           />
           <link
             rel="preload"
-            href="http://typography.doordash.com/TTNorms-Regular.woff2"
+            href="https://typography.doordash.com/TTNorms-Regular.woff2"
             type="font/woff2"
             crossOrigin="anonymous"
             as="font"
           />
           <link
             rel="preload"
-            href="http://typography.doordash.com/TTNorms-Medium.woff2"
+            href="https://typography.doordash.com/TTNorms-Medium.woff2"
             type="font/woff2"
             crossOrigin="anonymous"
             as="font"
           />
           <link
             rel="preload"
-            href="http://typography.doordash.com/TTNorms-Bold.woff2"
+            href="https://typography.doordash.com/TTNorms-Bold.woff2"
             type="font/woff2"
             as="font"
             crossOrigin="anonymous"

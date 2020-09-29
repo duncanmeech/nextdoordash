@@ -10,18 +10,19 @@ body {
 @font-face {
   font-family: "TTNorms";
   font-display: swap;
-  src: url("http://typography.doordash.com/TTNorms-Regular.woff2")
+  src: url("https://typography.doordash.com/TTNorms-Regular.woff2")
     format("woff");
 }
 
 @font-face {
   font-family: "TTNorms-Medium";
   font-display: swap;
-  src: url("http://typography.doordash.com/TTNorms-Medium.woff2") format("woff");
+  src: url("https://typography.doordash.com/TTNorms-Medium.woff2")
+    format("woff");
 }
 
 @font-face {
   font-family: "TTNorms-Bold";
   font-display: swap;
-  src: url("http://typography.doordash.com/TTNorms-Bold.woff2") format("woff");
+  src: url("https://typography.doordash.com/TTNorms-Bold.woff2") format("woff");
 }
