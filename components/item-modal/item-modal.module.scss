@@ -12,6 +12,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: $breakpointTablet) {
+    align-items: flex-start;
+  }
 }
 .modal {
   width: 560px;
@@ -24,10 +28,18 @@
   background-color: white;
   overflow: hidden;
 
+  @media (max-width: $breakpointTablet) {
+    width: 100vw;
+    height: 100vh;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .textArea {
   flex-shrink: 0;
@@ -68,6 +80,10 @@
   border: 4px solid transparent;
   min-width: 200px;
   max-width: 30vw;
+
+  @media (max-width: $breakpointTablet) {
+    margin-bottom: 40px;
+  }
 }
 .button:focus {
   border: 4px solid rgba(0, 0, 255, 0.4);
