@@ -1,4 +1,5 @@
 import styles from "./_app.css";
+import Head from "next/head";
 import App from "next/app";
 import KeyValue from "../components/utils/keyvalue";
 
@@ -15,6 +16,39 @@ export function reportWebVitals(metric) {
 export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />;
+    return (
+      <React.Fragment>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=2"
+          />
+          <link
+            rel="preload"
+            href="http://typography.doordash.com/TTNorms-Regular.woff2"
+            type="font/woff2"
+            crossOrigin="anonymous"
+            as="font"
+          />
+          <link
+            rel="preload"
+            href="http://typography.doordash.com/TTNorms-Medium.woff2"
+            type="font/woff2"
+            crossOrigin="anonymous"
+            as="font"
+          />
+          <link
+            rel="preload"
+            href="http://typography.doordash.com/TTNorms-Bold.woff2"
+            type="font/woff2"
+            as="font"
+            crossOrigin="anonymous"
+          />
+        </Head>
+        <Component {...pageProps} />
+      </React.Fragment>
+    );
   }
 }

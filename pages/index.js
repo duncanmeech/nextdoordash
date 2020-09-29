@@ -48,24 +48,6 @@ function Home({ stores }) {
             Helvetica Neue, sans-serif;
         }
 
-        @font-face {
-          font-family: "TTNorms";
-          src: url("https://typography.doordash.com/TTNorms-Regular.woff2")
-            format("woff");
-        }
-
-        @font-face {
-          font-family: "TTNorms-Medium";
-          src: url("https://typography.doordash.com/TTNorms-Medium.woff2")
-            format("woff");
-        }
-
-        @font-face {
-          font-family: "TTNorms-Bold";
-          src: url("https://typography.doordash.com/TTNorms-Bold.woff2")
-            format("woff");
-        }
-
         * {
           box-sizing: border-box;
         }
