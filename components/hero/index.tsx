@@ -1,18 +1,27 @@
 import React, { Fragment } from "react";
-import styles from "./hero.module.scss";
 import { getCannonicalURI } from "../utils/image";
-
-// destructure SCSS variables from the style object
-const { heroHeight, logoSize } = styles;
+import {
+  HeroHeight,
+  LogoSize,
+  HeroContainer,
+  ImageContainer,
+  ImageWrapper,
+  Image,
+  Triangle,
+  LogoContainer,
+  LogoInner,
+  LogoImage,
+  Name,
+} from "./hero-styles";
 
 const optimalHeroImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=1000,height=${heroHeight},format=auto,quality=50/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=1000,height=${HeroHeight},format=auto,quality=50/${source}`;
 };
 
 const optimalLogoImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,height=${logoSize},format=auto,quality=72/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=contain,height=${LogoSize},format=auto,quality=72/${source}`;
 };
 
 type Props = {
@@ -21,35 +30,33 @@ type Props = {
   logoImage?: string;
 };
 
-export default function ({ storeName, storeImage, logoImage }: Props) {
+export default function Hero({ storeName, storeImage, logoImage }: Props) {
   return (
-    <div className={styles.hero}>
+    <HeroContainer>
       {storeImage && (
-        <div className={styles.imageContainer}>
-          <div className={styles.imageWrapper}>
-            <img
-              className={styles.image}
+        <ImageContainer>
+          <ImageWrapper>
+            <Image
               src={optimalHeroImageUrl(storeImage)}
               alt={storeName}
               loading="eager"
             />
-          </div>
+          </ImageWrapper>
           {logoImage && (
             <Fragment>
-              <div className={styles.triangle} />
-              <div className={styles.logoContainer}>
-                <div className={styles.logoInner} />
-                <img
-                  className={styles.logoImage}
+              <Triangle />
+              <LogoContainer>
+                <LogoInner />
+                <LogoImage
                   src={optimalLogoImageUrl(logoImage)}
                   alt={storeName}
                 />
-              </div>
+              </LogoContainer>
             </Fragment>
           )}
-        </div>
+        </ImageContainer>
       )}
-      <div className={styles.name}>{storeName}</div>
-    </div>
+      <Name>{storeName}</Name>
+    </HeroContainer>
   );
 }

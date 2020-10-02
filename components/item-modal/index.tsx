@@ -36,7 +36,7 @@ export default class ItemModal extends React.PureComponent<Props> {
             <Title>{name}</Title>
             <Description>{description}</Description>
           </TextArea>
-          <Image src={optimalImageUrl(imageUrl)} />
+          {imageUrl && <Image src={optimalImageUrl(imageUrl)} />}
           <OptionsArea>
             <ul>
               {Object.keys(metrics).map((key) => {

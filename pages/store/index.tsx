@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./store.module.scss";
+import { Main, Content, CheckoutArea } from "./store-styles";
 import dynamic from "next/dynamic";
 import DocumentHead from "./document-head";
 import Hero from "../../components/hero";
@@ -58,8 +58,8 @@ class StorePage extends React.Component<Props> {
     return (
       <React.Fragment>
         <DocumentHead />
-        <div className={styles.nonCheckout}>
-          <div className={styles.content}>
+        <Main>
+          <Content>
             <Hero
               storeName={storeName}
               storeImage={storeImage}
@@ -73,11 +73,11 @@ class StorePage extends React.Component<Props> {
                   onOpenItemModal={this.onOpenItemModal}
                 />
               ))}
-          </div>
-        </div>
-        <div className={styles.checkout}>
+          </Content>
+        </Main>
+        <CheckoutArea>
           <CheckoutSidebar />
-        </div>
+        </CheckoutArea>
         <Header />
         {itemModalOpen && (
           <ItemModal menuItem={selectedItem} closed={this.onCloseItemModal} />
