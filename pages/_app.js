@@ -29,14 +29,14 @@ export default class MyApp extends App {
             rel="preload"
             href="https://typography.doordash.com/TTNorms-Regular.woff2"
             type="font/woff2"
-            crossOrigin="anonymous"
+            crossorigin
             as="font"
           />
           <link
             rel="preload"
             href="https://typography.doordash.com/TTNorms-Medium.woff2"
             type="font/woff2"
-            crossOrigin="anonymous"
+            crossorigin
             as="font"
           />
           <link
@@ -44,7 +44,7 @@ export default class MyApp extends App {
             href="https://typography.doordash.com/TTNorms-Bold.woff2"
             type="font/woff2"
             as="font"
-            crossOrigin="anonymous"
+            crossorigin
           />
         </Head>
         <Component {...pageProps} />
