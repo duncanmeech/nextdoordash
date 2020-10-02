@@ -1,6 +1,6 @@
-@import "../../styles/doordash.scss";
+import styled from "styled-components";
 
-.modalOverlay {
+export const ModalOverlay = styled.div`
   position: fixed;
   z-index: 100000;
   left: 0;
@@ -17,7 +17,9 @@
     align-items: flex-start;
   }
 }
-.modal {
+`;
+
+export const Modal = styled.div`
   width: 560px;
   max-width: 100vw;
   height: calc(100vh - 120px);
@@ -40,8 +42,9 @@
 
   overflow-y: scroll;
   overflow-x: hidden;
-}
-.textArea {
+`;
+
+export const TextArea = styled.div`
   flex-shrink: 0;
   .title {
     font-size: 32px;
@@ -53,20 +56,35 @@
     color: $secondaryText;
     margin-bottom: 8px;
   }
-}
-.image {
+`;
+
+export const Title = styled.div`
+  font-size: 32px;
+  font-family: TTNorms-Bold;
+  color: $primaryText;
+  margin-bottom: 8px;
+`;
+
+export const Description = styled.div`
+  color: $secondaryText;
+  margin-bottom: 8px;
+`;
+
+export const Image = styled.img`
   width: 100%;
   overflow: hidden;
   object-fit: cover;
   flex-shrink: 0;
   margin-bottom: 8px;
-}
-.optionsArea {
+`;
+
+export const OptionsArea = styled.div`
   width: 100%;
   height: 100%;
   margin-bottom: 8px;
-}
-.button {
+`;
+
+export const CloseButton = styled.button`
   flex-shrink: 0;
   color: white;
   background-color: rgb(235, 23, 0);
@@ -84,7 +102,8 @@
   @media (max-width: $breakpointTablet) {
     margin-bottom: 40px;
   }
-}
-.button:focus {
-  border: 4px solid rgba(0, 0, 255, 0.4);
-}
+
+  &:focus {
+    border: 4px solid rgba(0, 0, 255, 0.4);
+  }
+`;

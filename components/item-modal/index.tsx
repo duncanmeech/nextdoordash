@@ -1,8 +1,17 @@
-import styles from "./item-modal.module.scss";
 import React from "react";
 import ReactDOM from "react-dom";
 import { getCannonicalURI } from "../utils/image";
 import KeyValue from "../utils/keyvalue";
+import {
+  ModalOverlay,
+  Modal,
+  TextArea,
+  Title,
+  Description,
+  Image,
+  OptionsArea,
+  CloseButton,
+} from "./item-modal-styles";
 
 const optimalImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
@@ -21,25 +30,23 @@ export default class ItemModal extends React.PureComponent<Props> {
     const metrics = KeyValue.get("metrics", {});
 
     return ReactDOM.createPortal(
-      <div className={styles.modalOverlay}>
-        <div className={styles.modal}>
-          <div className={styles.textArea}>
-            <div className={styles.title}>{name}</div>
-            <div className={styles.description}>{description}</div>
-          </div>
-          <img className={styles.image} src={optimalImageUrl(imageUrl)} />
-          <div className={styles.optionsArea}>
+      <ModalOverlay>
+        <Modal>
+          <TextArea>
+            <Title>{name}</Title>
+            <Description>{description}</Description>
+          </TextArea>
+          <Image src={optimalImageUrl(imageUrl)} />
+          <OptionsArea>
             <ul>
               {Object.keys(metrics).map((key) => {
                 return <li key={key}>{`${key} - ${metrics[key]}`}</li>;
               })}
             </ul>
-          </div>
-          <button className={styles.button} onClick={closed}>
-            Close
-          </button>
-        </div>
-      </div>,
+          </OptionsArea>
+          <CloseButton onClick={closed}>Close</CloseButton>
+        </Modal>
+      </ModalOverlay>,
       document.body
     );
   }
