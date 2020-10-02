@@ -1,13 +1,20 @@
 import React, { Fragment } from "react";
-import styles from "./menu.module.scss";
 import { getCannonicalURI } from "../utils/image";
 import { InView } from "react-intersection-observer";
-
-const { imageSize } = styles;
+import {
+  Box,
+  BoxLeft,
+  ItemName,
+  ItemDescription,
+  ItemPrice,
+  ImageContainer,
+  Image,
+  IMAGE_SIZE,
+} from "./menu-styles";
 
 const optimalImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
-  return `https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=${imageSize},height=${imageSize},format=auto,quality=50/${source}`;
+  return `https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=${IMAGE_SIZE},height=${IMAGE_SIZE},format=auto,quality=50/${source}`;
 };
 
 type Props = {
@@ -23,25 +30,22 @@ export default class MenuCard extends React.PureComponent<Props> {
     return (
       <InView triggerOnce>
         {({ inView, ref }) => (
-          <div className={styles.box} ref={ref} onClick={cardClicked}>
+          <Box ref={ref} onClick={cardClicked}>
             {inView && (
               <Fragment>
-                <div className={styles.boxleft}>
-                  <span className={styles.itemname}>{name}</span>
-                  <span className={styles.itemdescription}>{description}</span>
-                  <span className={styles.itemprice}>{displayPrice}</span>
-                </div>
+                <BoxLeft>
+                  <ItemName>{name}</ItemName>
+                  <ItemDescription>{description}</ItemDescription>
+                  <ItemPrice>{displayPrice}</ItemPrice>
+                </BoxLeft>
                 {imageUrl && (
-                  <div className={styles.image}>
-                    <img
-                      className={styles.img}
-                      src={optimalImageUrl(imageUrl)}
-                    />
-                  </div>
+                  <ImageContainer>
+                    <Image src={optimalImageUrl(imageUrl)} />
+                  </ImageContainer>
                 )}
               </Fragment>
             )}
-          </div>
+          </Box>
         )}
       </InView>
     );

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./menu.module.scss";
 import MenuCard from "./menu-card";
+import { MenuSection, MenuName, Grid } from "./menu-styles";
 
 type Props = {
   menu: any;
@@ -13,9 +13,9 @@ export default class Menu extends React.PureComponent<Props> {
     const { name: menuName, id, items } = menu;
 
     return (
-      <div key={id} className={styles.menu}>
-        <div className={styles.menuname}>{menuName}</div>
-        <div className={styles.grid}>
+      <MenuSection key={id}>
+        <MenuName>{menuName}</MenuName>
+        <Grid>
           {items.map((item) => {
             const { id } = item;
             return (
@@ -26,8 +26,8 @@ export default class Menu extends React.PureComponent<Props> {
               />
             );
           })}
-        </div>
-      </div>
+        </Grid>
+      </MenuSection>
     );
   }
 }

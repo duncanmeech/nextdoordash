@@ -1,43 +1,45 @@
-@import "../../styles/doordash.scss";
+import styled from "styled-components";
+import DLS from "../../styles/doordash-styles";
 
-$imageSize: 125;
+export const IMAGE_SIZE = 125;
 
-:export {
-  imageSize: $imageSize;
-}
-
-.menu {
+export const MenuSection = styled.div`
   width: 100%;
   margin-top: 40px;
 }
-.menuname {
-  color: $primaryText;
+`;
+
+export const MenuName = styled.div`
+  color: ${DLS.Black};
   font-size: 24px;
   margin-bottom: 8px;
   font-family: TTNorms-Bold;
 }
-.grid {
+`;
+
+export const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, calc(50% - 8px));
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-}
-@media (max-width: $breakpointTablet) {
-  .grid {
-    grid-template-columns: 1fr;
+
+  @media (max-width: ${DLS.BreakpointTablet}px) {
+      grid-template-columns: 1fr;
   }
-}
-.box {
+}`;
+
+export const Box = styled.div`
   width: 100%;
-  height: $imageSize + px;
-  border: 1px solid $gray;
+  height: ${IMAGE_SIZE}px;
+  border: 1px solid lightgray;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
   overflow: hidden;
   cursor: pointer;
-}
-.boxleft {
+}`;
+
+export const BoxLeft = styled.div`
   width: 100%;
   // css hack to make text-overflow: ellipsis work on text items
   min-width: 0;
@@ -47,11 +49,12 @@ $imageSize: 125;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-.itemname {
+}`;
+
+export const ItemName = styled.span`
   font-size: 16px;
   font-family: TTNorms-Bold;
-  color: $primaryText;
+  color: ${DLS.Black};
   margin-bottom: 8px;
 
   white-space: nowrap;
@@ -60,11 +63,12 @@ $imageSize: 125;
   text-overflow: ellipsis;
   width: 100%;
   min-width: 0;
-}
-.itemdescription {
+}`;
+
+export const ItemDescription = styled.span`
   font-size: 14px;
   font-family: TTNorms;
-  color: $secondaryText;
+  color: ${DLS.DarkGray};
   margin-bottom: 8px;
   line-height: 20px;
   letter-spacing: 0ch;
@@ -77,18 +81,21 @@ $imageSize: 125;
   -webkit-box-orient: vertical;
   max-height: 40px;
   white-space: normal;
-}
-.itemprice {
+}`;
+
+export const ItemPrice = styled.span`
   font-size: 14px;
-  color: $secondaryText;
-}
-.image {
-  width: $imageSize + px;
-  height: $imageSize + px;
+  color: ${DLS.DarkGray};
+}`;
+
+export const ImageContainer = styled.div`
+  width: ${IMAGE_SIZE}px;
+  height: ${IMAGE_SIZE}px;
   flex-shrink: 0;
-}
-.img {
+}`;
+
+export const Image = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
+}`;
