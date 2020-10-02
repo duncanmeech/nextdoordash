@@ -1,9 +1,8 @@
 import React from "react";
-import { Main, Content, CheckoutArea } from "./store-styles";
+import { ContentArea, Content, CheckoutArea } from "./store-styles";
 import dynamic from "next/dynamic";
 import DocumentHead from "./document-head";
 import Hero from "../../components/hero";
-import Menu from "../../components/menu";
 import Header from "../../components/header";
 import CheckoutSidebar from "../../components/checkout-sidebar";
 
@@ -12,6 +11,13 @@ import CheckoutSidebar from "../../components/checkout-sidebar";
  * this component will ONLY be loaded when an <ItemModal /> is actually rendered.
  */
 const ItemModal = dynamic(() => import("../../components/item-modal"), {
+  ssr: false,
+});
+
+/**
+ * Menu is not needed until we load menus on the client side
+ */
+const Menu = dynamic(() => import("../../components/menu"), {
   ssr: false,
 });
 
@@ -58,7 +64,7 @@ class StorePage extends React.Component<Props> {
     return (
       <React.Fragment>
         <DocumentHead />
-        <Main>
+        <ContentArea>
           <Content>
             <Hero
               storeName={storeName}
@@ -74,7 +80,7 @@ class StorePage extends React.Component<Props> {
                 />
               ))}
           </Content>
-        </Main>
+        </ContentArea>
         <CheckoutArea>
           <CheckoutSidebar />
         </CheckoutArea>

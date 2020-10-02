@@ -4,7 +4,7 @@ import DLS from "../../styles/doordash-styles";
 const ContentPadding = 20;
 const ContentMaxWidth = 1000;
 
-export const Main = styled.div`
+export const ContentArea = styled.div`
   width: calc(100vw - ${DLS.CheckoutSidebarWidth}px);
   min-height: 100vh;
   display: inline-flex;
