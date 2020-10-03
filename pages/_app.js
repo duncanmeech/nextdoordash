@@ -25,7 +25,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=2"
           />
-          <link
+          {/* <link
             rel="preload"
             href="https://typography.doordash.com/TTNorms-Regular.woff2"
             type="font/woff2"
@@ -45,7 +45,7 @@ export default class MyApp extends App {
             type="font/woff2"
             as="font"
             crossorigin
-          />
+          /> */}
         </Head>
         <Component {...pageProps} />
       </React.Fragment>
