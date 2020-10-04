@@ -4,6 +4,11 @@ import DLS from "../../styles/doordash-styles";
 const ContentPadding = 20;
 const ContentMaxWidth = 1000;
 
+export const Dummy = styled.div`
+  width: 100%;
+`;
+export default Dummy;
+
 export const ContentArea = styled.div`
   width: calc(100vw - ${DLS.CheckoutSidebarWidth}px);
   min-height: 100vh;
@@ -19,7 +24,7 @@ export const ContentArea = styled.div`
 export const Content = styled.div`
   width: 100%;
   max-width: ${ContentMaxWidth}px;
-  padding: 0 ${ContentPadding}px;
+  padding: ${DLS.HeaderHeight}px ${ContentPadding}px;
 `;
 
 export const CheckoutArea = styled.div`

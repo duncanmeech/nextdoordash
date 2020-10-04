@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import DLS from "../../styles/doordash-styles";
+import { Text } from "@doordash/design-language";
 
 export const HeroHeight = 250;
 export const LogoSize = 76;
@@ -86,7 +87,8 @@ export const LogoImage = styled.img`
   height: 100%;
 }`;
 
-export const Name = styled.div`
-  font-size: 40px;
-  font-family: TTNorms-Bold;
-}`;
+export const Name = styled(Text).attrs({
+  tag: "h1",
+  styles: Text.Styles.Bold40,
+  tabletStyles: Text.Styles.MajorPageTitle,
+})``;

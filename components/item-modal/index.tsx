@@ -1,17 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import Button from "@doordash/component-button";
+import LayerManager from "@doordash/component-layer-manager";
+import { Modal } from "@doordash/component-modal";
+
 import { getCannonicalURI } from "../utils/image";
 import KeyValue from "../utils/keyvalue";
-import {
-  ModalOverlay,
-  Modal,
-  TextArea,
-  Title,
-  Description,
-  Image,
-  OptionsArea,
-  CloseButton,
-} from "./item-modal-styles";
+import { TextArea, Description, Image, OptionsArea } from "./item-modal-styles";
 
 const optimalImageUrl = (imageUrl) => {
   const source = getCannonicalURI(imageUrl);
@@ -29,11 +23,10 @@ export default class ItemModal extends React.PureComponent<Props> {
     const { imageUrl, name, description } = menuItem;
     const metrics = KeyValue.get("metrics", {});
 
-    return ReactDOM.createPortal(
-      <ModalOverlay>
-        <Modal>
+    return (
+      <LayerManager>
+        <Modal title={name} hasCloseButton={true}>
           <TextArea>
-            <Title>{name}</Title>
             <Description>{description}</Description>
           </TextArea>
           {imageUrl && <Image src={optimalImageUrl(imageUrl)} />}
@@ -44,10 +37,11 @@ export default class ItemModal extends React.PureComponent<Props> {
               })}
             </ul>
           </OptionsArea>
-          <CloseButton onClick={closed}>Close</CloseButton>
+          <Button type={Button.Types.PrimaryPill} onClick={closed}>
+            Close
+          </Button>
         </Modal>
-      </ModalOverlay>,
-      document.body
+      </LayerManager>
     );
   }
 }
