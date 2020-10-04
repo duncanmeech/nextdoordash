@@ -1,10 +1,19 @@
 import React from "react";
+import { ApolloProvider } from "@apollo/react-hooks";
+import ApolloClient from "apollo-client";
+import { HttpLink } from "apollo-link-http";
+import {
+  InMemoryCache,
+  IntrospectionFragmentMatcher,
+} from "apollo-cache-inmemory";
+
 import { ContentArea, Content, CheckoutArea } from "./store-styles";
 import dynamic from "next/dynamic";
 import DocumentHead from "./document-head";
 import Hero from "../../components/hero";
 import Header from "../../components/header";
 import CheckoutSidebar from "../../components/checkout-sidebar";
+import { ApolloLink } from "apollo-link";
 
 /**
  * import client side AND only as needed. The bundle containing
@@ -28,6 +37,52 @@ type Props = {
 };
 
 class StorePage extends React.Component<Props> {
+  constructor(props: Props) {
+    super(props);
+    this.client = new ApolloClient({
+      link: ApolloLink.from([
+        new HttpLink({
+          uri: "http://localhost:3000/api/graphql-data",
+          // credentials: "include",
+          // headers: {
+          //   "Accept-Language": language,
+          //   "X-Experience-Id": parseExperience(experience),
+          //   // for the channel category app-consumer should always be marketplace
+          //   "X-Channel-Id": CHANNEL_MARKETPLACE,
+          // },
+          // fetchOptions: {
+          //   credentials: "include",
+          // },
+        }),
+      ]),
+      cache: new InMemoryCache({
+        fragmentMatcher: new IntrospectionFragmentMatcher({
+          introspectionQueryResultData: {
+            __schema: {
+              types: [
+                {
+                  kind: "UNION",
+                  name: "DefaultNode",
+                  possibleTypes: [
+                    {
+                      name: "DefaultOption",
+                    },
+                    {
+                      name: "DefaultOptionList",
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        }),
+      }),
+      connectToDevTools: true,
+    });
+  }
+
+  client: ApolloClient<{}>;
+
   state = {
     itemModalOpen: false,
     storepageFeed: null,
@@ -62,7 +117,7 @@ class StorePage extends React.Component<Props> {
     }
 
     return (
-      <React.Fragment>
+      <ApolloProvider client={this.client}>
         <DocumentHead />
         <ContentArea>
           <Content>
@@ -88,7 +143,7 @@ class StorePage extends React.Component<Props> {
         {itemModalOpen && (
           <ItemModal menuItem={selectedItem} closed={this.onCloseItemModal} />
         )}
-      </React.Fragment>
+      </ApolloProvider>
     );
   }
 }
